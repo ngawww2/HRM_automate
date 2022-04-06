@@ -13,5 +13,6 @@ test32
     Maximize Browser Window
     login owner
     validate employee info page 
-    validate employee profile 
+    validate employee profile
+    sleep    3
     [Teardown]    Close All Browsers

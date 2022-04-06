@@ -97,7 +97,3 @@ accept salary advance
     Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/p 	 expected=คุณต้องการที่จะอนุมัติเอกสารนี้หรือไม่
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div[2]
 
-=======
-    
->>>>>>> 140233218779ee4b0bdcd9a1bdc03bea42fde87f
->>>>>>> 802e047d3fc2e895663032e24b4e0ea332d511a6

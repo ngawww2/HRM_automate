@@ -76,5 +76,27 @@ test51
 	[Teardown]    Close All Browsers
 
 test52
-    
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login owner
+	validate document ot
+	sleep   3
+	[Teardown]    Close All Browsers   
 
+
+# test53
+# 	Open Browser    ${host}    browser=chrome
+# 	Maximize Browser Window
+# 	login owner
+	
+# 	sleep   3
+# 	[Teardown]    Close All Browsers
+
+test57
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login owner
+	validate document ot
+	detail document ot
+	sleep   3
+	[Teardown]    Close All Browsers

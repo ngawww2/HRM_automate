@@ -104,3 +104,21 @@ ${detailot04}   ตำแหน่ง
 ${detailot05}   บริษัท
 ${detailot06}   รายละเอียดการขอ OT
 ${detailot07}   การตั้งค่าการทำ OT ของวันนี้
+
+#admincompany
+${admincompany01}   รายการข้อมูลผู้ใช้งาน (บริษัท)
+${admincompany02}   ชื่อผู้ใช้งาน
+${admincompany03}   สิทธิ์
+${admincompany04}   สาขา
+${admincompany05}   อีเมล
+${admincompany06}   เบอร์โทร
+${admincompany07}   สร้างเมื่อ
+${admincompany08}   จัดการ
+
+#admintel
+${admintel01}   0987554323
+${admintel02}   0875645654
+${admintel03}   0202200022
+
+# add => admin
+# ${}

@@ -100,3 +100,34 @@ test57
 	detail document ot
 	sleep   3
 	[Teardown]    Close All Browsers
+
+test58
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login owner
+	validate document ot
+	detail document ot
+	accept document ot
+	sleep   3
+	[Teardown]    Close All Browsers
+
+test59
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login owner
+	admincompany
+	sleep   3
+	[Teardown]    Close All Browsers
+
+test60
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login owner
+	admincompany
+	admincompany telephone filter
+	sleep   3
+	[Teardown]    Close All Browsers	
+
+# test61
+
+

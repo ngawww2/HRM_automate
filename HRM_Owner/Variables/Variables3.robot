@@ -79,6 +79,30 @@ ${formula08}    รายละเอียด
 ${formula09}    จัดการ
 ${formula10}    + สูตรคำนวณเงินเดือน
 
+# formula detail page
+# ${formulaDetail01}    สร้างสูตรคำนวณเงินเดือน
+# ${formulaDetail01}    รายละเอียดสูตรคำนวณเงินเดือน
+# ${formulaDetail01}    ชื่อสูตรคำนวณ
+# ${formulaDetail01}    สาขา
+# ${formulaDetail01}    วันทำงาน
+# ${formulaDetail01}    จำนวนชั่วโมงเข้า-ออกงาน
+# ${formulaDetail01}    เวลาเข้างาน
+# ${formulaDetail01}    เวลาออกงาน
+# ${formulaDetail01}    จำนวนวันลา
+# ${formulaDetail01}    รอบนับ
+# ${formulaDetail01}    จำนวนเงินหัก (ต่อครั้ง)
+# ${formulaDetail01}    จำนวนวันขาด
+# ${formulaDetail01}    จำนวนวันสาย-ออกก่อน
+# ${formulaDetail01}    อนุญาตสาย (นาที)
+# ${formulaDetail01}    อนุญาตออกก่อน (นาที)
+# ${formulaDetail01}
+# ${formulaDetail01}
+# ${formulaDetail01}
+# ${formulaDetail01}
+# ${formulaDetail01}
+# ${formulaDetail01}
+# ${formulaDetail01}
+
 # salary calculator
 ${salaryCal01}    คำนวณเงินเดือน
 ${salaryCal02}    รายการข้อมูลคำนวณเงินเดือน

@@ -35,6 +35,24 @@ case66
     sleep     2
     [Teardown]    Close All Browsers
 
+case67
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate employee checkin
+    search rank checkin data
+    sleep     2
+    [Teardown]    Close All Browsers
+
+case68
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate employee checkin
+    search major checkin data
+    sleep     2
+    [Teardown]    Close All Browsers
+
 case69
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
@@ -105,6 +123,23 @@ case76
     sleep     2
     [Teardown]    Close All Browsers
 
+case77
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate formula page
+    add formula
+    sleep     2
+    [Teardown]    Close All Browsers
+
+case78
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate formula page
+    validate formula detail
+    sleep     2
+    [Teardown]    Close All Browsers
 
 case79
     Open Browser    ${host}    browser=chrome
@@ -130,6 +165,15 @@ case81
     validate salary calculator
     select category rank employee
     sleep     2
+    [Teardown]    Close All Browsers
+
+case82
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate salary calculator
+    create salary daily
+    sleep     5
     [Teardown]    Close All Browsers
 
 case83

@@ -1,195 +1,260 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220406 17:32:14.440" rpa="false" schemaversion="3">
-<suite id="s1" name="Owner3" source="c:\Users\niphaphon\Desktop\HRM_automate\HRM_Owner\testcase\Owner3.robot">
-<test id="s1-t1" name="case92" line="215">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220407 15:01:32.371" rpa="false" schemaversion="3">
+<suite id="s1" name="Owner2" source="c:\Users\niphaphon\Desktop\HRM_automate\HRM_Owner\testcase\Owner2.robot">
+<test id="s1-t1" name="test33" line="19">
 <kw name="Open Browser" library="Selenium2Library">
 <arg>${host}</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220406 17:32:14.762" level="INFO">Opening browser 'chrome' to base url 'https://hr.dudee-indeed.com/th/login'.</msg>
-<status status="PASS" starttime="20220406 17:32:14.762" endtime="20220406 17:32:16.906"/>
+<msg timestamp="20220407 15:01:33.735" level="INFO">Opening browser 'chrome' to base url 'https://hr.dudee-indeed.com/th/login'.</msg>
+<status status="PASS" starttime="20220407 15:01:33.731" endtime="20220407 15:01:35.888"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220406 17:32:16.908" endtime="20220406 17:32:17.048"/>
+<status status="PASS" starttime="20220407 15:01:35.892" endtime="20220407 15:01:36.058"/>
 </kw>
 <kw name="login owner" library="keyword">
 <kw name="Input Text" library="Selenium2Library">
 <arg>//*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/input[1]</arg>
 <arg>Dudeeindeed.pt</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220406 17:32:17.053" level="INFO">Typing text 'Dudeeindeed.pt' into text field '//*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/input[1]'.</msg>
-<status status="PASS" starttime="20220406 17:32:17.051" endtime="20220406 17:32:17.262"/>
+<msg timestamp="20220407 15:01:36.070" level="INFO">Typing text 'Dudeeindeed.pt' into text field '//*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/input[1]'.</msg>
+<status status="PASS" starttime="20220407 15:01:36.067" endtime="20220407 15:01:36.299"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>//*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/input[2]</arg>
 <arg>123456</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220406 17:32:17.263" level="INFO">Typing text '123456' into text field '//*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/input[2]'.</msg>
-<status status="PASS" starttime="20220406 17:32:17.262" endtime="20220406 17:32:17.350"/>
+<msg timestamp="20220407 15:01:36.303" level="INFO">Typing text '123456' into text field '//*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/input[2]'.</msg>
+<status status="PASS" starttime="20220407 15:01:36.301" endtime="20220407 15:01:36.405"/>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <arg>locator=//*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220406 17:32:17.351" level="INFO">Clicking button '//*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/button'.</msg>
-<status status="PASS" starttime="20220406 17:32:17.350" endtime="20220406 17:32:17.411"/>
+<msg timestamp="20220407 15:01:36.407" level="INFO">Clicking button '//*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/button'.</msg>
+<status status="PASS" starttime="20220407 15:01:36.406" endtime="20220407 15:01:36.480"/>
 </kw>
-<status status="PASS" starttime="20220406 17:32:17.050" endtime="20220406 17:32:17.412"/>
+<status status="PASS" starttime="20220407 15:01:36.062" endtime="20220407 15:01:36.481"/>
 </kw>
-<kw name="validate problem employee page" library="keyword3">
+<kw name="validate employee info page" library="keyword">
 <kw name="Wait Until Element Contains" library="Selenium2Library">
-<arg>locator=//*[@id="__layout"]/div/div[2]/div[1]/aside/div[1]/div[3]/div[28]/p</arg>
-<arg>text=${problem01}</arg>
+<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div[1]/div[1]/div/div[1]/span</arg>
+<arg>text=${text01}</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" starttime="20220406 17:32:17.413" endtime="20220406 17:32:18.226"/>
+<status status="PASS" starttime="20220407 15:01:36.484" endtime="20220407 15:01:37.340"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
-<arg>locator=//*[@id="__layout"]/div/div[2]/div[1]/aside/div[1]/div[3]/div[28]/p</arg>
+<arg>locator=//*[@id="__layout"]/div/div[2]/div[1]/aside/div[1]/div[3]/div[9]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220406 17:32:18.227" level="INFO">Clicking element '//*[@id="__layout"]/div/div[2]/div[1]/aside/div[1]/div[3]/div[28]/p'.</msg>
-<status status="PASS" starttime="20220406 17:32:18.227" endtime="20220406 17:32:18.293"/>
+<msg timestamp="20220407 15:01:37.342" level="INFO">Clicking element '//*[@id="__layout"]/div/div[2]/div[1]/aside/div[1]/div[3]/div[9]'.</msg>
+<status status="PASS" starttime="20220407 15:01:37.341" endtime="20220407 15:01:37.668"/>
 </kw>
 <kw name="Wait Until Element Contains" library="Selenium2Library">
-<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[2]</arg>
-<arg>text=${problem03}</arg>
+<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[1]/div</arg>
+<arg>text=${employee03}</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" starttime="20220406 17:32:18.294" endtime="20220406 17:32:19.073"/>
+<status status="PASS" starttime="20220407 15:01:37.669" endtime="20220407 15:01:38.640"/>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
 <arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[1]/div/div</arg>
-<arg>expected=${problem02}</arg>
+<arg>expected=${employee01}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220406 17:32:19.074" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[1]/div/div' contains exact text 'รายการแจ้งปัญหาของพนักงาน'.</msg>
-<status status="PASS" starttime="20220406 17:32:19.073" endtime="20220406 17:32:19.107"/>
+<msg timestamp="20220407 15:01:38.644" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[1]/div/div' contains exact text 'รายการข้อมูลพนักงาน'.</msg>
+<status status="PASS" starttime="20220407 15:01:38.641" endtime="20220407 15:01:38.683"/>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
-<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[2]</arg>
-<arg>expected=${problem03}</arg>
+<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/button</arg>
+<arg>expected=${employee02}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220406 17:32:19.108" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[2]' contains exact text 'รหัสพนักงาน'.</msg>
-<status status="PASS" starttime="20220406 17:32:19.108" endtime="20220406 17:32:19.123"/>
+<msg timestamp="20220407 15:01:38.686" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/button' contains exact text '+ พนักงาน'.</msg>
+<status status="PASS" starttime="20220407 15:01:38.684" endtime="20220407 15:01:38.708"/>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
-<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[3]</arg>
-<arg>expected=${problem04}</arg>
+<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[1]/div</arg>
+<arg>expected=${employee03}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220406 17:32:19.124" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[3]' contains exact text 'ชื่อพนักงาน/ร้านค้า'.</msg>
-<status status="PASS" starttime="20220406 17:32:19.124" endtime="20220406 17:32:19.147"/>
+<msg timestamp="20220407 15:01:38.711" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[1]/div' contains exact text 'รหัสพนักงาน'.</msg>
+<status status="PASS" starttime="20220407 15:01:38.709" endtime="20220407 15:01:38.726"/>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
-<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[4]</arg>
-<arg>expected=${problem05}</arg>
+<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[2]</arg>
+<arg>expected=${employee04}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220406 17:32:19.148" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[4]' contains exact text 'ติดต่อ'.</msg>
-<status status="PASS" starttime="20220406 17:32:19.147" endtime="20220406 17:32:19.169"/>
+<msg timestamp="20220407 15:01:38.729" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[2]' contains exact text 'ชื่อ'.</msg>
+<status status="PASS" starttime="20220407 15:01:38.727" endtime="20220407 15:01:38.750"/>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
-<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[5]</arg>
-<arg>expected=${problem06}</arg>
+<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[3]</arg>
+<arg>expected=${employee05}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220406 17:32:19.170" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[5]' contains exact text 'สังกัด'.</msg>
-<status status="PASS" starttime="20220406 17:32:19.169" endtime="20220406 17:32:19.191"/>
+<msg timestamp="20220407 15:01:38.754" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[3]' contains exact text 'ติดต่อ'.</msg>
+<status status="PASS" starttime="20220407 15:01:38.751" endtime="20220407 15:01:38.777"/>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
-<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[6]</arg>
-<arg>expected=${problem07}</arg>
+<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[4]</arg>
+<arg>expected=${employee06}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220406 17:32:19.192" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[6]' contains exact text 'สาขา/บริษัท'.</msg>
-<status status="PASS" starttime="20220406 17:32:19.192" endtime="20220406 17:32:19.213"/>
+<msg timestamp="20220407 15:01:38.780" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[4]' contains exact text 'สังกัด'.</msg>
+<status status="PASS" starttime="20220407 15:01:38.778" endtime="20220407 15:01:38.806"/>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
-<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[7]</arg>
-<arg>expected=${problem08}</arg>
+<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[5]</arg>
+<arg>expected=${employee07}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220406 17:32:19.214" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[7]' contains exact text 'ประเภทของปัญหา'.</msg>
-<status status="PASS" starttime="20220406 17:32:19.213" endtime="20220406 17:32:19.235"/>
+<msg timestamp="20220407 15:01:38.808" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[5]' contains exact text 'สาขา'.</msg>
+<status status="PASS" starttime="20220407 15:01:38.806" endtime="20220407 15:01:38.832"/>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
-<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[8]</arg>
-<arg>expected=${problem09}</arg>
+<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[6]</arg>
+<arg>expected=${employee08}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220406 17:32:19.236" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[8]' contains exact text 'หมวดหมู่ย่อยของปัญหา'.</msg>
-<status status="PASS" starttime="20220406 17:32:19.235" endtime="20220406 17:32:19.258"/>
+<msg timestamp="20220407 15:01:38.835" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[6]' contains exact text 'ประเภทเงินเดือน'.</msg>
+<status status="PASS" starttime="20220407 15:01:38.833" endtime="20220407 15:01:38.867"/>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
-<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[9]</arg>
-<arg>expected=${problem10}</arg>
+<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[7]</arg>
+<arg>expected=${employee09}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220406 17:32:19.259" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[9]' contains exact text 'ประเภท'.</msg>
-<status status="PASS" starttime="20220406 17:32:19.258" endtime="20220406 17:32:19.282"/>
+<msg timestamp="20220407 15:01:38.873" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[7]' contains exact text 'เครื่องสแกน'.</msg>
+<status status="PASS" starttime="20220407 15:01:38.869" endtime="20220407 15:01:38.901"/>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
-<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[10]</arg>
-<arg>expected=${problem11}</arg>
+<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[8]</arg>
+<arg>expected=${employee10}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220406 17:32:19.283" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[10]' contains exact text 'สถานะ'.</msg>
-<status status="PASS" starttime="20220406 17:32:19.283" endtime="20220406 17:32:19.311"/>
+<msg timestamp="20220407 15:01:38.904" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[8]' contains exact text 'บัญชี'.</msg>
+<status status="PASS" starttime="20220407 15:01:38.902" endtime="20220407 15:01:38.928"/>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
-<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[11]</arg>
-<arg>expected=${problem12}</arg>
+<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[9]</arg>
+<arg>expected=${employee11}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220406 17:32:19.312" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/thead/tr/th[11]' contains exact text 'รายละเอียด'.</msg>
-<status status="PASS" starttime="20220406 17:32:19.312" endtime="20220406 17:32:19.338"/>
+<msg timestamp="20220407 15:01:38.931" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[9]' contains exact text 'ลบข้อมูล'.</msg>
+<status status="PASS" starttime="20220407 15:01:38.929" endtime="20220407 15:01:38.956"/>
 </kw>
-<status status="PASS" starttime="20220406 17:32:17.413" endtime="20220406 17:32:19.338"/>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[10]</arg>
+<arg>expected=${employee12}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220407 15:01:38.958" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[10]' contains exact text 'ลาออก'.</msg>
+<status status="PASS" starttime="20220407 15:01:38.956" endtime="20220407 15:01:38.984"/>
 </kw>
-<kw name="respond problem" library="keyword3">
+<kw name="Element Text Should Be" library="Selenium2Library">
+<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[11]</arg>
+<arg>expected=${employee13}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220407 15:01:38.987" level="INFO">Verifying element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/thead/tr/th[11]' contains exact text 'ไล่ออก'.</msg>
+<status status="PASS" starttime="20220407 15:01:38.985" endtime="20220407 15:01:39.012"/>
+</kw>
+<status status="PASS" starttime="20220407 15:01:36.482" endtime="20220407 15:01:39.013"/>
+</kw>
+<kw name="add employee" library="keyword2">
 <kw name="Click Element" library="Selenium2Library">
-<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/tbody/tr[2]/td[11]/div/i</arg>
+<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220406 17:32:19.340" level="INFO">Clicking element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/tbody/tr[2]/td[11]/div/i'.</msg>
-<status status="PASS" starttime="20220406 17:32:19.339" endtime="20220406 17:32:19.382"/>
-</kw>
-<kw name="Wait Until Element Contains" library="Selenium2Library">
-<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[3]/div[2]/div[2]/p</arg>
-<arg>text=${getproblem02}</arg>
-<doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" starttime="20220406 17:32:19.383" endtime="20220406 17:32:19.634"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[3]/div[1]/div[2]/button[1]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220406 17:32:19.634" level="INFO">Clicking element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[3]/div[1]/div[2]/button[1]'.</msg>
-<status status="PASS" starttime="20220406 17:32:19.634" endtime="20220406 17:32:19.686"/>
-</kw>
-<kw name="Wait Until Element Contains" library="Selenium2Library">
-<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[3]/div[2]/div[2]/p</arg>
-<arg>text=ประเภทของปัญหา</arg>
-<doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" starttime="20220406 17:32:19.687" endtime="20220406 17:32:19.934"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220406 17:32:24.947" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220406 17:32:19.934" endtime="20220406 17:32:24.947"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[3]/div[1]/div[2]/button[1]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220406 17:32:24.948" level="INFO">Clicking element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[3]/div[1]/div[2]/button[1]'.</msg>
-<status status="PASS" starttime="20220406 17:32:24.948" endtime="20220406 17:32:24.988"/>
-</kw>
-<status status="PASS" starttime="20220406 17:32:19.339" endtime="20220406 17:32:24.989"/>
+<msg timestamp="20220407 15:01:39.021" level="INFO">Clicking element '//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/button'.</msg>
+<status status="PASS" starttime="20220407 15:01:39.018" endtime="20220407 15:01:39.080"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220406 17:32:26.993" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220406 17:32:24.990" endtime="20220406 17:32:26.993"/>
+<msg timestamp="20220407 15:01:41.086" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220407 15:01:39.081" endtime="20220407 15:01:41.088"/>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<arg>//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[2]/div[2]/div/div[2]/select</arg>
+<arg>ทดสอบ</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220407 15:01:41.093" level="INFO">Selecting options from selection list '//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[2]/div[2]/div/div[2]/select' by label ทดสอบ.</msg>
+<status status="PASS" starttime="20220407 15:01:41.090" endtime="20220407 15:01:41.236"/>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<arg>//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[7]/div[2]/div/div[2]/select</arg>
+<arg>นาย / Mr.</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220407 15:01:41.240" level="INFO">Selecting options from selection list '//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[7]/div[2]/div/div[2]/select' by label นาย / Mr..</msg>
+<status status="PASS" starttime="20220407 15:01:41.238" endtime="20220407 15:01:41.322"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[8]/div[1]/div/div[2]/input</arg>
+<arg>มั่งมี</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 15:01:41.326" level="INFO">Typing text 'มั่งมี' into text field '//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[8]/div[1]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20220407 15:01:41.324" endtime="20220407 15:01:41.486"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[8]/div[2]/div/div[2]/Input</arg>
+<arg>ศรีสุข</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 15:01:41.489" level="INFO">Typing text 'ศรีสุข' into text field '//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[8]/div[2]/div/div[2]/Input'.</msg>
+<status status="PASS" starttime="20220407 15:01:41.488" endtime="20220407 15:01:41.601"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[9]/div[1]/div/div[2]/input</arg>
+<arg>Mangmee</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 15:01:41.603" level="INFO">Typing text 'Mangmee' into text field '//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[9]/div[1]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20220407 15:01:41.602" endtime="20220407 15:01:41.717"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[9]/div[2]/div/div[2]/input</arg>
+<arg>Srisuk</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 15:01:41.720" level="INFO">Typing text 'Srisuk' into text field '//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[9]/div[2]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20220407 15:01:41.718" endtime="20220407 15:01:41.825"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[10]/div[1]/div/div[2]/input</arg>
+<arg>มั่ง</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 15:01:41.828" level="INFO">Typing text 'มั่ง' into text field '//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[10]/div[1]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20220407 15:01:41.826" endtime="20220407 15:01:41.931"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[10]/div[2]/div/div[2]/input</arg>
+<arg>Mang</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 15:01:41.934" level="INFO">Typing text 'Mang' into text field '//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[10]/div[2]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20220407 15:01:41.932" endtime="20220407 15:01:42.037"/>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<arg>locator=//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[13]/div/div/div[1]/p[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220407 15:01:42.038" endtime="20220407 15:01:42.322"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 15:01:44.338" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220407 15:01:42.323" endtime="20220407 15:01:44.338"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[11]/div[1]/div/div[2]/input</arg>
+<arg>1509965687452</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 15:01:44.341" level="INFO">Typing text '1509965687452' into text field '//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[11]/div[1]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20220407 15:01:44.340" endtime="20220407 15:01:44.463"/>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<arg>//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[11]/div[2]/div/div[2]/select</arg>
+<arg>ทดสอบการแก้ไขรายละเอียดตำแหน่ง</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220407 15:01:44.465" level="INFO">Selecting options from selection list '//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[11]/div[2]/div/div[2]/select' by label ทดสอบการแก้ไขรายละเอียดตำแหน่ง.</msg>
+<status status="PASS" starttime="20220407 15:01:44.464" endtime="20220407 15:01:44.541"/>
+</kw>
+<status status="PASS" starttime="20220407 15:01:39.015" endtime="20220407 15:01:44.542"/>
 </kw>
 <kw name="Close All Browsers" library="Selenium2Library" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220406 17:32:26.994" endtime="20220406 17:32:29.357"/>
+<status status="PASS" starttime="20220407 15:01:44.544" endtime="20220407 15:01:47.880"/>
 </kw>
-<status status="PASS" starttime="20220406 17:32:14.760" endtime="20220406 17:32:29.357"/>
+<status status="PASS" starttime="20220407 15:01:33.726" endtime="20220407 15:01:47.882"/>
 </test>
 <kw name="Close All Browsers" library="Selenium2Library" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220406 17:32:29.361" endtime="20220406 17:32:29.361"/>
+<status status="PASS" starttime="20220407 15:01:47.892" endtime="20220407 15:01:47.895"/>
 </kw>
-<status status="PASS" starttime="20220406 17:32:14.446" endtime="20220406 17:32:29.361"/>
+<status status="PASS" starttime="20220407 15:01:32.383" endtime="20220407 15:01:47.897"/>
 </suite>
 <statistics>
 <total>
@@ -198,7 +263,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Owner3">Owner3</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Owner2">Owner2</stat>
 </suite>
 </statistics>
 <errors>

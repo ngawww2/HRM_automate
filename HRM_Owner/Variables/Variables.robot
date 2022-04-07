@@ -72,7 +72,7 @@ ${edit17}    โทรศัพท์บ้าน
 ${edit18}    123
 ${edit19}    สำหรับการทดสอบระบบ
 
-# ข้อมูลสาขา
+# major data
 
 ${major01}    รายการข้อมูลสาขา
 ${major02}    + สาขา
@@ -86,6 +86,7 @@ ${major09}    ตั้งค่าเบิกเงินล่วงหน้
 ${major10}    จัดการ
 ${major11}    ดูดีอินดีด-ทดสอบโปรดักชัน (Dudee-Indeed-Production Test)
 ${major12}    แก้ไขข้อมูลสาขา
+
 # add major
 
 ${settingPaymet01}    รูปแบบตั้งค่าจ่ายเงิน
@@ -93,6 +94,22 @@ ${settingPaymet02}    รูปแบบ
 ${settingPaymet03}    จ่ายด้วยเครดิต(coin)
 ${settingPaymet04}    จ่ายด้วยเงินโอน
 ${settingPaymet05}    จ่ายนอกระบบ
+
+# setting wifi and gps
+${settingWifi01}    ตั้งค่ารูปแบบการเข้างาน
+${settingWifi02}    กำหนดจุดตำแหน่ง (GPS)
+${settingWifi03}    บันทึกตำแหน่ง
+${settingWifi04}    ชื่อสถานที่
+${settingWifi05}    รัศมี (กิโลเมตร)
+${settingWifi06}    Latitude (ละติจูด)
+${settingWifi07}    Longitude (ลองจิจูด)
+${settingWifi08}    กำหนดไวไฟ (Wi-Fi)
+${settingWifi09}    ลำดับ
+${settingWifi10}    ไอพี (Wi-Fi IP Address)
+${settingWifi11}    ชื่อไวไฟ
+${settingWifi12}    ไอดีไวไฟ
+${settingWifi13}    หาค่าไอพี
+${settingWifi14}    จัดการ
 
 # department page
 ${department01}    รายการข้อมูลแผนก

@@ -14,6 +14,7 @@ test01
     login owner
     validate homepage
     validate sidebar
+    sleep     2
     [Teardown]    Close All Browsers
 
 test04
@@ -22,6 +23,7 @@ test04
     login owner
     validate salary overview
     validate sidebar
+    sleep     2
     [Teardown]    Close All Browsers
 
 test05
@@ -30,6 +32,7 @@ test05
     login owner
     validate business info
     validate sidebar
+    sleep     2
     [Teardown]    Close All Browsers
 
 test06
@@ -38,6 +41,7 @@ test06
     login owner
     validate amount info
     validate sidebar
+    sleep     2
     [Teardown]    Close All Browsers
 
 test07
@@ -47,6 +51,7 @@ test07
     validate edit info
     edit info
     validate sidebar
+    sleep     2
     [Teardown]    Close All Browsers
 
 test08
@@ -55,6 +60,7 @@ test08
     login owner
     validate major page 
     validate sidebar
+    sleep     2
     [Teardown]    Close All Browsers
 
 test09
@@ -64,14 +70,16 @@ test09
     validate major page
     search major
     validate sidebar
+    sleep     2
     [Teardown]    Close All Browsers
 
-# test10
-#     Open Browser    ${host}    browser=chrome
-#     Maximize Browser Window
-#     login owner
-#     add major
-#     [Teardown]    Close All Browsers
+test10
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    add major
+    sleep     2
+    [Teardown]    Close All Browsers
 
 test11
     Open Browser    ${host}    browser=chrome
@@ -79,6 +87,7 @@ test11
     login owner
     validate major page 
     edit major
+    sleep     2
     [Teardown]    Close All Browsers
 
 test12
@@ -87,14 +96,17 @@ test12
     login owner
     validate major page 
     delete major
+    sleep     2
     [Teardown]    Close All Browsers
 
 test13
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
-    validate major page 
-    add GPS
+    validate major page
+    validate GPS and wifi 
+    add GPS and wifi
+    sleep     2
     [Teardown]    Close All Browsers
 
 
@@ -104,6 +116,7 @@ test14
     login owner
     validate major page 
     setting payment
+    sleep     2
     [Teardown]    Close All Browsers
 
 test15
@@ -111,6 +124,7 @@ test15
     Maximize Browser Window
     login owner
     validate department page
+    sleep     2
     [Teardown]    Close All Browsers
 
 test16
@@ -119,6 +133,34 @@ test16
     login owner
     validate department page
     search department
+    sleep     2
+    [Teardown]    Close All Browsers
+
+test17
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate department page
+    add department
+    sleep     2
+    [Teardown]    Close All Browsers
+
+test18
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate department page
+    edit department
+    sleep     2
+    [Teardown]    Close All Browsers
+  
+test19
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate department page
+    delete department
+    sleep     2
     [Teardown]    Close All Browsers
 
 test20
@@ -126,6 +168,7 @@ test20
     Maximize Browser Window
     login owner
     validate rank page
+    sleep     2
     [Teardown]    Close All Browsers
 
 test21 
@@ -134,13 +177,70 @@ test21
     login owner
     validate rank page
     search rank
+    sleep     2
     [Teardown]    Close All Browsers
+
+test22
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate rank page
+    search department in rank page
+    sleep     2
+    [Teardown]    Close All Browsers
+
+test22
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate rank page
+    search department in rank page
+    sleep     2
+    [Teardown]    Close All Browsers
+
+test23
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate rank page
+    search salary category
+    sleep     2
+    [Teardown]    Close All Browsers
+
+test24
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate rank page
+    add rank
+    sleep     2
+    [Teardown]    Close All Browsers
+
+test25
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate rank page
+    edit rank
+    sleep     2
+    [Teardown]    Close All Browsers
+
+test26
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate rank page
+    delete rank
+    sleep     2
+    [Teardown]    Close All Browsers
+
 
 test27
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
-    validate employee info page 
+    validate employee info page
+    sleep     2
     [Teardown]    Close All Browsers
 
 test28
@@ -149,6 +249,7 @@ test28
     login owner
     validate employee info page 
     search employee name
+    sleep     2
     [Teardown]    Close All Browsers
 
 test29
@@ -157,6 +258,7 @@ test29
     login owner
     validate employee info page 
     search employee id
+    sleep     2
     [Teardown]    Close All Browsers
 
 test30
@@ -165,5 +267,14 @@ test30
     login owner
     validate employee info page 
     search employee phone number
+    sleep     2
     [Teardown]    Close All Browsers
 
+test31
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate employee info page 
+    search employee with rank
+    sleep     2
+    [Teardown]    Close All Browsers

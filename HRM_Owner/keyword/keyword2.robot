@@ -39,10 +39,11 @@ add employee
     Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[9]/div[1]/div/div[2]/input  Mangmee
     Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[9]/div[2]/div/div[2]/input  Srisuk
     Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[10]/div[1]/div/div[2]/input   มั่ง
-    Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[10]/div[1]/div/div[2]/input   Mang
-    Execute Javascript 	 window.scrollTo(0,500)
-    Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[11]/div[1]/div/div[2] 1509965687452
-    Select From List By Label   //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[11]/div[2]/div/div[2]/select  ทดสอบเพิ่มตำแหน่ง
+    Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[10]/div[2]/div/div[2]/input   Mang
+    Scroll Element Into View 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[13]/div/div/div[1]/p[1]
+    sleep  2
+    Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[11]/div[1]/div/div[2]/input    1509965687452
+    Select From List By Label   //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[11]/div[2]/div/div[2]/select    ทดสอบการแก้ไขรายละเอียดตำแหน่ง
 
 
 detail document leave

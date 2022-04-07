@@ -154,8 +154,8 @@ add admincompany
     Input Text  //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div[4]/div/div[2]/div/input      0955874563
     Input Text  //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div[5]/div/div[2]/div/textarea   test add admin
     Scroll Element Into View 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div[8]/div/div[1]/p[1]
-    Input Text  //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div[7]/div/div[2]/div/select     HR STAFF
-    Input Text  //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div[8]/div/div[2]/div/select     ทดสอบ
+    Select From List By Label  //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div[7]/div/div[2]/div/select     HR STAFF
+    Select From List By Label  //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div[8]/div/div[2]/div/select     ทดสอบ
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[3]/div/div[2]
 
 

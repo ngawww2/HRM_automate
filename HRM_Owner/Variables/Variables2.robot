@@ -13,6 +13,17 @@ ${profile04}    ชื่อพนักงาน
 ${profile05}    เลขบัตรประชาชน
 ${profile06}    ข้อมูลเงินเดือน
 
+# add => employee
+${addemployee01}    สร้างพนักงาน
+${addemployee02}    รายละเอียดบริษัท
+${addemployee03}    ข้อมูลธนาคารของพนักงาน
+${addemployee04}    รายละเอียดพนักงาน
+${addemployee05}    ข้อมูลติดต่อ
+${addemployee06}    รูปภาพ
+${addemployee07}    ข้อมูลทั่วไป
+${addemployee08}    ข้อมูลบุคคล
+
+
 #document => leave
 ${leave01}  รายการเอกสารขอลา
 ${leave02}  ชื่อพนักงาน

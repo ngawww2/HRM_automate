@@ -9,12 +9,20 @@ Suite Teardown     Close All Browsers
 
 *** Test Cases ***
 # test32
-#     Open Browser    ${host}    browser=chrome
-#     Maximize Browser Window
-#     login owner
-#     validate employee info page 
-#     validate employee profile 
-#     [Teardown]    Close All Browsers
+    # Open Browser    ${host}    browser=chrome
+    # Maximize Browser Window
+    # login owner
+    # validate employee info page 
+    # validate employee profile 
+    # [Teardown]    Close All Browsers
+
+test33
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate employee info page 
+    add employee
+    [Teardown]    Close All Browsers
 
 # test43
 #     Open Browser    ${host}    browser=chrome
@@ -128,14 +136,14 @@ Suite Teardown     Close All Browsers
 # 	sleep   3
 # 	[Teardown]    Close All Browsers	
 
-test61
-    Open Browser    ${host}    browser=chrome
-	Maximize Browser Window
-	login owner
-	admincompany
-    add admincompany
-	sleep   3
-	[Teardown]    Close All Browsers
+# test61
+#     Open Browser    ${host}    browser=chrome
+# 	Maximize Browser Window
+# 	login owner
+# 	admincompany
+#     add admincompany
+# 	sleep   3
+# 	[Teardown]    Close All Browsers
 
 # test62
 # 	Open Browser    ${host}    browser=chrome

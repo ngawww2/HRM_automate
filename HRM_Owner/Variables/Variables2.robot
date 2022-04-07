@@ -23,6 +23,25 @@ ${addemployee06}    รูปภาพ
 ${addemployee07}    ข้อมูลทั่วไป
 ${addemployee08}    ข้อมูลบุคคล
 
+#request register
+${requestregister01}    รหัสพนักงาน
+${requestregister02}    ชื่อ
+${requestregister03}    ติดต่อ
+${requestregister04}    สังกัด
+${requestregister05}    สาขา
+${requestregister06}    ประเภทเงินเดือน
+${requestregister07}    ตรวจสอบ
+
+#accept => request register
+${acceptregister01}    ตรวจสอบข้อมูล
+${acceptregister02}    รายละเอียดบริษัท
+${acceptregister03}    ข้อมูลธนาคารของพนักงาน
+${acceptregister04}    รายละเอียดพนักงาน
+${acceptregister05}    ข้อมูลติดต่อ
+${acceptregister06}    รูปภาพ
+${acceptregister07}    ข้อมูลทั่วไป
+${acceptregister08}    ข้อมูลบุคคล
+
 
 #document => leave
 ${leave01}  รายการเอกสารขอลา

@@ -121,4 +121,29 @@ ${admintel02}   0875645654
 ${admintel03}   0202200022
 
 # add => admin
-# ${}
+${deleteadmin01}    ชื่อผู้ใช้งาน
+${deleteadmin02}    รหัสผ่าน
+${deleteadmin03}    อีเมล
+${deleteadmin04}    เบอร์โทร
+${deleteadmin05}    ที่อยู่
+${deleteadmin06}    รูปภาพ
+${deleteadmin07}    สิทธิ์การเข้าถึง
+${deleteadmin08}    สาขา
+
+#Edit => admin
+${editadmin01}  ชื่อผู้ใช้งาน
+${editadmin02}  อีเมล
+${editadmin03}  เบอร์โทร
+${editadmin04}  ที่อยู่
+${editadmin05}  รูปภาพ
+${editadmin06}  สิทธิ์การเข้าถึง
+${editadmin07}  สาขา
+
+#Delete => admin
+${deleteadmin01}    ชื่อผู้ใช้งาน
+${deleteadmin02}    อีเมล
+${deleteadmin03}    เบอร์โทร
+${deleteadmin04}    ที่อยู่
+${deleteadmin05}    รูปภาพ
+${deleteadmin06}    สิทธิ์การเข้าถึง
+${deleteadmin07}    สาขา

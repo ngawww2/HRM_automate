@@ -189,15 +189,6 @@ test22
     sleep     2
     [Teardown]    Close All Browsers
 
-test22
-    Open Browser    ${host}    browser=chrome
-    Maximize Browser Window
-    login owner
-    validate rank page
-    search department in rank page
-    sleep     2
-    [Teardown]    Close All Browsers
-
 test23
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window

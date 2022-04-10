@@ -366,18 +366,17 @@ ${salaryDetail09}    ประกันสังคม
 ${salaryDetail10}    เบิกล่วงหน้า
 ${salaryDetail11}    ยอดสุทธิ
 ${salaryDetail12}    หมายเหตุ
-${salaryDetail13}    สลีปเงินเดือน
-${salaryDetail14}    รายละเอียด
-${salaryDetail15}    จำนวนพนักงาน (คน)
-${salaryDetail16}    รวมเงินเดือน (บาท)
-${salaryDetail17}    รวมค่าล่วงเวลา(บาท)
-${salaryDetail18}    รวมรายการปรับเพิ่ม (บาท)
-${salaryDetail19}    รวมรายการปรับลด (บาท)
-${salaryDetail20}    รวมประกันสังคม (บาท)
-${salaryDetail21}    รวมเบิก (บาท)
-${salaryDetail22}    รวมจ่ายสุทธิ (บาท)
-${salaryDetail23}    ชำระเข้าไปยังกระเป๋าเงิน (บาท)
-${salaryDetail24}    ชำระไปยังธนาคาร (บาท)
+${salaryDetail13}    รายละเอียด
+${salaryDetail14}    จำนวนพนักงาน (คน)
+${salaryDetail15}    รวมเงินเดือน (บาท)
+${salaryDetail16}    รวมค่าล่วงเวลา(บาท)
+${salaryDetail17}    รวมรายการปรับเพิ่ม (บาท)
+${salaryDetail18}    รวมรายการปรับลด (บาท)
+${salaryDetail19}    รวมประกันสังคม (บาท)
+${salaryDetail20}    รวมเบิก (บาท)
+${salaryDetail21}    รวมจ่ายสุทธิ (บาท)
+${salaryDetail22}    ชำระเข้าไปยังกระเป๋าเงิน (บาท)
+${salaryDetail23}    ชำระไปยังธนาคาร (บาท)  
 
 # payment history
 ${history01}    ประวัติการโอนเงิน

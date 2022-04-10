@@ -35,14 +35,14 @@ Suite Teardown     Close All Browsers
 #     sleep     5
 #     [Teardown]    Close All Browsers
 
-case83
-    Open Browser    ${host}    browser=chrome
-    Maximize Browser Window
-    login hr lead
-    validate salary calculator
-    create salary monthly
-    sleep     2
-    [Teardown]    Close All Browsers
+# case83
+#     Open Browser    ${host}    browser=chrome
+#     Maximize Browser Window
+#     login hr lead
+#     validate salary calculator
+#     create salary monthly
+#     sleep     2
+#     [Teardown]    Close All Browsers
 
 # case84
 #     Open Browser    ${host}    browser=chrome
@@ -53,11 +53,11 @@ case83
 #     sleep     2
 #     [Teardown]    Close All Browsers
 
-# case85
-#     Open Browser    ${host}    browser=chrome
-#     Maximize Browser Window
-#     login hr lead
-#     validate salary calculator
-#     delete salary calculator
-#     sleep     2
-#     [Teardown]    Close All Browsers
+case85
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login hr lead
+    validate salary calculator
+    delete salary calculator
+    sleep     2
+    [Teardown]    Close All Browsers

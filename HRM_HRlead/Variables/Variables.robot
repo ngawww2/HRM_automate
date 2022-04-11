@@ -387,14 +387,16 @@ ${history05}    จำนวน
 ${history06}    ประเภทการสั่งจ่าย
 ${history07}    สถานะ
 
-# store page
-${store01}    ร้านค้า
-${store02}    รายการข้อมูลร้านค้า
-${store03}    + ร้านค้า
-${store04}    ชื่อร้านค้า
-${store05}    ผู้ประกอบการ
-${store06}    เบอร์โทร
-${store07}    จัดการ
+# Other page
+${Other01}    อื่น ๆ
+${Other02}    ฝ่ายลูกค้าสัมพันธ์
+${Other03}    ดูดี อินดีด คอร์ปอเรชั่น จำกัด
+${Other04}    ( Dudee-Indeed Corporation )
+${Other05}    187/24 Chang Klan Road, Muang Chiang Mai District, Chiang Mai, 50100
+${Other06}    062-508-7576
+${Other07}    contact@dudee-indeed.com
+${Other08}    www.dudee-indeed.com
+${Other09}    Dudee Indeed
 
 # problem employee
 ${problem01}    แจ้งปัญหาพนักงาน

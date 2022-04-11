@@ -16,22 +16,32 @@ validate employee profile
     
 
 
-# add employee
-#     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/button
-#     sleep  2
-#     Select From List By Label   //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[2]/div[2]/div/div[2]/select   ทดสอบ
-#     Select From List By Label   //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[7]/div[2]/div/div[2]/select   นาย / Mr.
-#     Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[8]/div[1]/div/div[2]/input  มั่งมี
-#     Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[8]/div[2]/div/div[2]/Input  ศรีสุข
-#     Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[9]/div[1]/div/div[2]/input  Mangmee
-#     Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[9]/div[2]/div/div[2]/input  Srisuk
-#     Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[10]/div[1]/div/div[2]/input   มั่ง
-#     Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[10]/div[2]/div/div[2]/input   Mang
-#     Scroll Element Into View 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[13]/div/div/div[1]/p[1]
-#     sleep  2
-#     Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[11]/div[1]/div/div[2]/input    1509965687452
-#     Select From List By Label   //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[11]/div[2]/div/div[2]/select    ทดสอบการแก้ไขรายละเอียดตำแหน่ง
-#     Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[12]/div[2]/div/div[2]/input   200
+add employee
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/button
+    sleep  2
+    Select From List By Label   //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[2]/div[2]/div/div[2]/select   ทดสอบ
+    Select From List By Label   //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[7]/div[2]/div/div[2]/select   นาย / Mr.
+    Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[8]/div[1]/div/div[2]/input  มั่งมี
+    Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[8]/div[2]/div/div[2]/Input  ศรีสุข
+    Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[9]/div[1]/div/div[2]/input  Mangmee
+    Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[9]/div[2]/div/div[2]/input  Srisuk
+    Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[10]/div[1]/div/div[2]/input   มั่ง
+    Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[10]/div[2]/div/div[2]/input   Mang
+    Scroll Element Into View 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[13]/div/div/div[1]/p[1]
+    sleep  2
+    Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[11]/div[1]/div/div[2]/input    1509965687452
+    Select From List By Label   //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[11]/div[2]/div/div[2]/select    ทดสอบการแก้ไขรายละเอียดตำแหน่ง
+    Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[12]/div[2]/div/div[2]/input   200
+    sleep  2
+    Scroll Element Into View 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[20]/div[1]/div/p
+    Choose File 	  //*[@id="imageEmployee"]/input    C:/Users/niphaphon/Downloads/275942561_500592671437574_4096192240162746079_n.jpg
+    Choose File 	  //*[@id="imageIdPassport"]/input    C:/Users/niphaphon/Downloads/275942561_500592671437574_4096192240162746079_n.jpg
+    sleep  2
+    Scroll Element Into View 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[32]/div/div/div[1]/p/span[1]
+    Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[31]/div[1]/div/div[2]/input   มั่ง
+    Input Text  //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[31]/div[2]/div/div[2]/input   มี
+    Input Text    //*[@id="__layout"]/div/div[2]/div/div/div[2]/div/div[32]/div/div/div[2]/input    0808008000
+    
 
 edit employee
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[3]/table/tbody/tr[3]/td[8]/i[2]

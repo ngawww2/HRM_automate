@@ -16,13 +16,14 @@ test32
     validate employee profile 
     [Teardown]    Close All Browsers
 
-# test33 ----- Not Finish -----
-#     Open Browser    ${host}    browser=chrome
-#     Maximize Browser Window
-#     login owner
-#     validate employee info page 
-#     add employee
-#     [Teardown]    Close All Browsers
+test33 ----- Not Finish -----
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate employee info page 
+    add employee
+	sleep  3
+    [Teardown]    Close All Browsers
 
 test34
     Open Browser    ${host}    browser=chrome

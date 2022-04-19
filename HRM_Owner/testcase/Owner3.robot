@@ -9,78 +9,214 @@ Suite Teardown     Close All Browsers
 
 *** Test Cases ***
 
-case64
+enter the Attendance page
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
-    validate employee checkin
+    validate Attendance page
     sleep     2
     [Teardown]    Close All Browsers
 
-case65
+enter the Add Attendance page case No Data
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
-    validate employee checkin
-    create checkin
+    validate Attendance page
+    validate Add Attendance case No Data
     sleep     2
     [Teardown]    Close All Browsers
 
-case66
+create Attendance
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
-    validate employee checkin
-    validate checkin data 
+    validate Attendance page
+    create Attendance
     sleep     2
     [Teardown]    Close All Browsers
 
-case67
+Add Attendance Fail case no Position 
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
-    validate employee checkin
+    validate Attendance page
+    validate Add Attendance Fail case no Position
+    sleep     2
+    [Teardown]    Close All Browsers
+
+Click back to Attendance page
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Attendance page
+    Click back to Attendance page
+    validate Attendance page
+    sleep     2
+    [Teardown]    Close All Browsers
+
+validate Attendance Calendar
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Attendance page
+    validate Attendance Calendar
+    sleep     2
+    [Teardown]    Close All Browsers
+
+search rank checkin data
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Attendance page
     search rank checkin data
     sleep     2
     [Teardown]    Close All Browsers
 
-case68
+search major checkin data
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
-    validate employee checkin
+    validate Attendance page
     search major checkin data
     sleep     2
     [Teardown]    Close All Browsers
 
-case69
+validate daily Attendance from Calendar
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
-    validate employee checkin
+    validate Attendance page
+    validate daily Attendance form Calendar
+    sleep     2
+    [Teardown]    Close All Browsers
+
+edit Attendance from Calendar
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Attendance page
+    validate daily Attendance from Calendar
+    edit Attendance from Calendar
+    sleep     2
+    [Teardown]    Close All Browsers
+
+cancel edit Attendance from Calendar
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Attendance page
+    validate daily Attendance from Calendar
+    cancel edit Attendance from Calendar&List
+    sleep     2
+    [Teardown]    Close All Browsers
+
+delete Attendance from Calendar
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Attendance page
+    validate daily Attendance from Calendar
+    delete Attendance from Calendar&List
+    sleep     2
+    [Teardown]    Close All Browsers
+
+delete Attendance from Calendar fail
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Attendance page
+    validate daily Attendance from Calendar
+    delete Attendance from Calendar&List fail
+    sleep     2
+    [Teardown]    Close All Browsers
+
+back to Attendance from Calendar page
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Attendance page
+    back to Attendance from Calendar page
+    sleep     2
+    [Teardown]    Close All Browsers
+
+validate Attendance List
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Attendance page
+    validate Attendance List
+    sleep     2
+    [Teardown]    Close All Browsers
+
+
+search employee id from Attendance List
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Attendance page
     search employee id checkin
     sleep     2
     [Teardown]    Close All Browsers
 
-case70
+edit Attendance from List
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
-    validate employee checkin
-    edit employee checkin data
+    validate Attendance page
+    validate Attendance from List
+    edit Attendance from Calendar&List
     sleep     2
     [Teardown]    Close All Browsers
 
-case71
+cancel edit Attendance from List
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
-    validate employee checkin
+    validate Attendance page
+    validate Attendance from List
+    cancel edit Attendance from Calendar&List
+    sleep     2
+    [Teardown]    Close All Browsers
+
+delete Attendance from List
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Attendance page
+    validate Attendance from List
+    delete Attendance from Calendar&List
+    sleep     2
+    [Teardown]    Close All Browsers
+
+delete Attendance from List fail
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Attendance page
+    validate Attendance from List
+    delete Attendance from Calendar&List fail
+    sleep     2
+    [Teardown]    Close All Browsers
+
+validate monthly report
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Attendance page
     report checkin data
     sleep     2
     [Teardown]    Close All Browsers
 
-case72
+back to Attendance page
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Attendance page
+    back to Attendance page
+    sleep     2
+    [Teardown]    Close All Browsers
+
+validate scan page
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -88,7 +224,7 @@ case72
     sleep     2
     [Teardown]    Close All Browsers
 
-case73 
+validate scan privacy employee
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -97,7 +233,18 @@ case73
     sleep     2
     [Teardown]    Close All Browsers
 
-case74
+back to scan page
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate scan page
+    validate scan privacy employee
+    back to scan page
+    validate scan page
+    sleep     2
+    [Teardown]    Close All Browsers
+
+edit scanner detail
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -106,7 +253,17 @@ case74
     sleep     2
     [Teardown]    Close All Browsers
 
-case75
+edit scanner detail fail
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate scan page
+    edit scanner detail fail
+    # clear text manual
+    sleep     2
+    [Teardown]    Close All Browsers
+
+delete scanner success
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -115,42 +272,98 @@ case75
     sleep     2
     [Teardown]    Close All Browsers
 
-case76
+# delete scanner fail case no username and Password
+# delete scanner fail case username an Password wrong
+
+validate Rule page
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
-    validate formula page
+    validate Rule page
     sleep     2
     [Teardown]    Close All Browsers
 
-case77
+validate Rule page no data
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
-    validate formula page
-    add formula
+    validate Rule page no data
     sleep     2
     [Teardown]    Close All Browsers
 
-case78
+add Rule success
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
-    validate formula page
-    validate formula detail
+    validate Rule page
+    add Rule
     sleep     2
     [Teardown]    Close All Browsers
 
-case79
+add Rule fail
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
-    validate formula page
-    delete formula
+    validate Rule page
+    add Rule fail
     sleep     2
     [Teardown]    Close All Browsers
 
-case80
+back to Rule page from Add rule
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Rule page
+    back to Rule page from Add rule
+    sleep     2
+    [Teardown]    Close All Browsers
+
+validate Rule detail
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Rule page
+    validate Rule detail
+    sleep     2
+    [Teardown]    Close All Browsers
+
+back to Rule page from Rule detail
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Rule page
+    back to Rule page from Rule detail
+    sleep     2
+    [Teardown]    Close All Browsers
+
+delete Rule success
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Rule page
+    delete Rule success
+    sleep     2
+    [Teardown]    Close All Browsers
+
+delete Rule fail case no username and Password
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Rule page
+    delete Rule fail case no username and Password
+    sleep     2
+    [Teardown]    Close All Browsers
+
+delete Rule fail case username an Password wrong
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate Rule page
+    delete Rule fail case username an Password wrong
+    sleep     2
+    [Teardown]    Close All Browsers
+
+validate salary calculator
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -158,7 +371,7 @@ case80
     sleep     2
     [Teardown]    Close All Browsers
 
-case81
+select category rank employee
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -167,7 +380,25 @@ case81
     sleep     2
     [Teardown]    Close All Browsers
 
-case82
+select category rank employee case no data 
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate salary calculator
+    select category rank employee case no data
+    sleep     2
+    [Teardown]    Close All Browsers
+
+don't create salary daily
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate salary calculator
+    don't create salary daily
+    sleep     5
+    [Teardown]    Close All Browsers
+
+create salary daily success
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -176,7 +407,43 @@ case82
     sleep     5
     [Teardown]    Close All Browsers
 
-case83
+create salary daily fail case no position selected
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate salary calculator
+    create salary daily fail case no position selected
+    sleep     5
+    [Teardown]    Close All Browsers
+
+create salary daily fail case no data
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate salary calculator
+    create salary daily fail case no data
+    sleep     5
+    [Teardown]    Close All Browsers
+
+back to salary calculator from daily
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate salary calculator
+    back to salary calculator from daily
+    sleep     5
+    [Teardown]    Close All Browsers
+
+don't create salary monthly
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate salary calculator
+    don't create salary monthly
+    sleep     5
+    [Teardown]    Close All Browsers
+
+create salary monthly success
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -185,7 +452,52 @@ case83
     sleep     2
     [Teardown]    Close All Browsers
 
-case84
+create salary monthly fail case no position selected
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate salary calculator
+    create salary monthly fail case no position selected
+    sleep     5
+    [Teardown]    Close All Browsers
+
+create salary monthly fail case no data
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate salary calculator
+    create salary monthly fail case no data
+    sleep     5
+    [Teardown]    Close All Browsers
+
+back to salary calculator from daily
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate salary calculator
+    back to salary calculator from daily
+    sleep     5
+    [Teardown]    Close All Browsers
+
+payment salary success
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate salary calculator
+    payment salary success
+    sleep     5
+    [Teardown]    Close All Browsers
+
+back to salary calculator page from payment salary
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate salary calculator
+    back to salary calculator page from payment salary
+    sleep     2
+    [Teardown]    Close All Browsers
+
+validate salary detail
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -194,7 +506,26 @@ case84
     sleep     2
     [Teardown]    Close All Browsers
 
-case85
+export salary detail
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate salary calculator
+    validate salary detail
+    export salary detail
+    sleep     2
+    [Teardown]    Close All Browsers
+
+back to salary calculator page from salary detail
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate salary calculator
+    back to salary calculator page from salary detail
+    sleep     2
+    [Teardown]    Close All Browsers
+
+delete salary calculator success
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner

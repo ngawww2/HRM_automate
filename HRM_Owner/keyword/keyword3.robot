@@ -494,6 +494,28 @@ delete salary calculator
     sleep   2
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div[2]
     Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/p    text=ระบุตัวตนเพื่อลบพนักงาน
+    Input Text    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div[2]/div/input    Dudeeindeed.pt
+    Input Text    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/div[2]/div[2]/div/input    123456
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/button[2]
+    sleep  2
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div[2]
+
+delete salary calculator fail case no username and Password
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/tbody/tr[2]/td[11]/i
+    Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/p    text=ยืนยันการดำเนินการนี้
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div[2]
+    Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/p    text=ระบุตัวตนเพื่อลบพนักงาน
+    sleep     2
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/button[2]
+
+delete salary calculator fail case username an Password wrong
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/tbody/tr[2]/td[11]/i
+    Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/p    text=ยืนยันการดำเนินการนี้
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div[2]
+    Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/p    text=ระบุตัวตนเพื่อลบพนักงาน
+    Input Text    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div[2]/div/input    Dudeeindeed.pt
+    Input Text    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/div[2]/div[2]/div/input    12345675
+    sleep     2
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/button[2]
 
 validate payment history page
@@ -511,6 +533,10 @@ validate payment history page
 validate payment history detail
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/tbody/tr[1]/td[7]/button/i
 
+click close payment history detail
+    sleep  2
+    Click Element    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[1]/div/ion-icon
+
 validate store page
     Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[1]/aside/div[1]/div[3]/div[25]/p    text=${store01}
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[1]/aside/div[1]/div[3]/div[25]/p
@@ -521,6 +547,116 @@ validate store page
     Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/thead/tr/th[3]    expected=${store05}
     Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/thead/tr/th[4]    expected=${store06}
     Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/thead/tr/th[5]    expected=${store07}
+
+search store name
+    Input Text    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div[1]/div/input    ทดสอบ
+    sleep   2
+
+search store name case no data
+    Input Text    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div[1]/div/input    ร้านอะไรไม่รู้
+    sleep   2
+    Element Text Should Be     //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/div/h2    ไม่มีรายการข้อมูลสำหรับแสดงผล
+
+add store success
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div[2]/button
+    sleep  2
+    Input Text    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[3]/div[1]/div/div[2]/input    ร้านค้าทดสอบ1
+    Input Text    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[3]/div[2]/div/div[2]/input    test-store1
+    Scroll Element Into View 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[13]/div/div/div[1]/p[1]
+    Input Text	//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[10]/div[1]/div/div[2]/input    1111111111111
+    Select From List By Label    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[10]/div[2]/div/div[2]/select    นาย / Mr.
+    Input Text	//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[11]/div[1]/div/div[2]/input    บุญมี1
+    Input Text	//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[11]/div[2]/div/div[2]/input    bunmee1
+    Input Text	//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[12]/div[1]/div/div[2]/input    มีตัง1
+    Input Text	//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[12]/div[2]/div/div[2]/input    meetung1
+    Input Text	//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[13]/div/div/div[2]/input    0000000111
+    Scroll Element Into View 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[1]/div[2]/button[2]
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[1]/div[2]/button[2]
+    
+add store fail
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div[2]/button
+    sleep  2
+    Input Text    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[3]/div[1]/div/div[2]/input    ร้านค้าทดสอบ
+    Scroll Element Into View 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[13]/div/div/div[1]/p[1]
+    Input Text	//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[10]/div[1]/div/div[2]/input    1111111111111
+    Select From List By Label    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[10]/div[2]/div/div[2]/select    นาย / Mr.
+    Input Text	//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[11]/div[2]/div/div[2]/input    bunmee
+    Input Text	//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[12]/div[1]/div/div[2]/input    มีตัง
+    Input Text	//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[13]/div/div/div[2]/input    0100000001
+    Scroll Element Into View 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[1]/div[2]/button[2]
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[1]/div[2]/button[2]
+
+back to store page from add store
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div[2]/button
+    sleep  2
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[1]/div[2]/button[1]
+
+edit store success
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/tbody/tr[1]/td[5]/i[1]
+    sleep  2
+    Input Text	//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[3]/div[1]/div/div[2]/input    ทดสอบแก้ไขชื่อร้านค้า
+    sleep  2
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[1]/div[2]/button[2]
+
+edit store fail
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/tbody/tr[1]/td[5]/i[1]
+    sleep  5
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[1]/div[2]/button[2]
+
+back to store page from edit store
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/tbody/tr[1]/td[5]/i[1]
+    sleep  5
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div/div[1]/div[2]/button[1]
+
+delete store success
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/tbody/tr[1]/td[5]/i[2]
+    Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/p    text=ยืนยันการดำเนินการนี้
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div[2]
+    sleep  2
+    Input Text    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div[2]/div/input    Dudeeindeed.pt
+    Input Text    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/div[2]/div[2]/div/input    123456
+    sleep     2
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/button[2]
+    sleep  2
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div[2]
+
+delete store fail case no username and Password
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/tbody/tr[1]/td[5]/i[2]
+    Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/p    text=ยืนยันการดำเนินการนี้
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div[2]
+    sleep     2
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/button[2]
+
+delete store fail case username an Password wrong
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/tbody/tr[1]/td[5]/i[2]
+    Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/p    text=ยืนยันการดำเนินการนี้
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div[2]
+    sleep  2
+    Input Text    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div[2]/div/input    Dudeeindeed.pt
+    Input Text    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/div[2]/div[2]/div/input    12345675
+    sleep     2
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/button[2]
+
+validate other page
+    Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[1]/aside/div[1]/div[3]/div[27]    text=${other01}
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[1]/aside/div[1]/div[3]/div[27]
+    sleep   2
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[1]/div/div    expected=${other01}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div/div/p    expected=${other02}
+    sleep  2
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div/div/i
+    sleep  2
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div/div/div[2]/div[1]/p[1]    expected=${other03}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div/div/div[2]/div[1]/p[2]    expected=${other04}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div/div/div[2]/div[2]/span    expected=${other05}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div/div/div[2]/div[3]/span    expected=${other06}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div/div/div[2]/div[4]/a    expected=${other07}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div/div/div[2]/div[5]/a    expected=${other08}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div/div/div[2]/div[6]/a    expected=${other09}
+
+close popup others page
+    sleep   2
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[1]/div/ion-icon
 
 validate problem employee page
     Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[1]/aside/div[1]/div[3]/div[28]/p    text=${problem01}
@@ -568,5 +704,14 @@ respond problem
     sleep     5
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[3]/div[1]/div[2]/button[1]
 
+back to problem employee page from respond problem
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/tbody/tr[1]/td[11]/div/i
+    sleep  2
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[3]/div[1]/div[2]/button[2]
 
-
+back to problem employee detail
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/tbody/tr[1]/td[11]/div/i
+    sleep  2
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[3]/div[1]/div[2]/button[1]
+    sleep  2
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[3]/div[1]/div[2]/button

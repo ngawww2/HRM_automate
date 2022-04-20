@@ -51,3 +51,40 @@ test19
     delete department
     sleep     2
     [Teardown]    Close All Browsers
+
+new case 01
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login hr lead
+    validate department page
+    filter department no data
+    sleep     2
+    [Teardown]    Close All Browsers
+
+new case 02
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login hr lead
+    validate department page
+    add department fail
+    sleep     2
+    [Teardown]    Close All Browsers
+
+new case 03
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login hr lead
+    validate department page
+    add department duplicate Information
+    sleep     2
+    [Teardown]    Close All Browsers
+
+new case 04
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login hr lead
+    validate department page
+    delete department with employee in it
+    sleep     2
+    [Teardown]    Close All Browsers
+

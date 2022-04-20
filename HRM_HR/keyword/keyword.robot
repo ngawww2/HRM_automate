@@ -4,10 +4,14 @@ Resource    ../Variables/Variables.robot
 
 *** Keywords ***
 
+############################################## Sigin System ##############################################
+
 login HR
     Input Text 	 //*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/input[1] 	 Dudeeindeedsh.pt
     Input Text 	 //*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/input[2] 	 123456
     Click Button 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/button
+
+############################################## Homepage ##############################################
 
 validate homepage
     Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div[1]/div[1]/div/div[1]/span 	 text=${text01}
@@ -33,6 +37,8 @@ validate sidebar
     Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[1]/aside/div[1]/div[3]/div[10]/p    expected=${sidebar11}
     Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[1]/aside/div[1]/div[3]/div[11]/p    expected=${sidebar12}
 
+############################################## Information ##############################################
+
 validate business info
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[1]/aside/div[1]/div[3]/div[3]/p
     sleep  2
@@ -56,6 +62,8 @@ validate business info
     Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div[8]/div[3]/p[2]    expected=${business16}
     Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div[8]/div[3]/p[3]    expected=${business17}
 
+############################################## Branch ##############################################
+
 validate major page  
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[1]/aside/div[1]/div[3]/div[4]
     sleep  2
@@ -76,6 +84,8 @@ validate major page
     Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div[7]/div[3]/p[1]    expected=${major04}
     Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div[7]/div[3]/p[2]    expected=${business16}
     Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div[7]/div[3]/p[3]    expected=${business17}
+
+############################################## Department ##############################################
 
 validate department page       
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[1]/aside/div[1]/div[3]/div[5]
@@ -117,6 +127,8 @@ delete department
     Click Element 	 //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/button[2]
     sleep  1
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div[2]
+
+############################################## Position ##############################################
 
 validate rank page 
     sleep  2
@@ -178,6 +190,8 @@ delete rank
     Click Element 	 //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/button[2]
     sleep  1
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div[2]
+
+############################################## Employee ##############################################
 
 validate employee info page      
     Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div[1]/div[1]/div/div[1]/span 	 text=${text01}
@@ -258,6 +272,8 @@ setting scanner
     Select Checkbox 	 locator=//*[@id="scanner_0"]
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[3]/div/div/button[2]
     sleep  1
+
+############################################## Salary Certificate ##############################################
 
 validate salary certificate
     Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[1]/aside/div[1]/div[3]/div[9]/p 	 text=เอกสารรับรองเงินเดือน

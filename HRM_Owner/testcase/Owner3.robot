@@ -534,7 +534,25 @@ delete salary calculator success
     sleep     2
     [Teardown]    Close All Browsers
 
-case86
+delete salary calculator fail case no username and Password
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate salary calculator
+    delete salary calculator fail case no username and Password
+    sleep     2
+    [Teardown]    Close All Browsers
+
+delete salary calculator fail case username an Password wrong
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate salary calculator
+    delete salary calculator fail case username an Password wrong
+    sleep     2
+    [Teardown]    Close All Browsers
+
+validate payment history page
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -542,7 +560,7 @@ case86
     sleep     2
     [Teardown]    Close All Browsers
 
-case87
+validate payment history detail
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -553,7 +571,17 @@ case87
     sleep     2
     [Teardown]    Close All Browsers
 
-case88
+click close payment history detail
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate payment history page
+    validate payment history detail
+    click close payment history detail
+    sleep     2
+    [Teardown]    Close All Browsers
+
+validate store page
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -561,7 +589,124 @@ case88
     sleep     2
     [Teardown]    Close All Browsers
 
-case89
+search store name
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate store page
+    search store name
+    sleep     2
+    [Teardown]    Close All Browsers
+
+search store name case no data
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate store page
+    search store name case no data
+    sleep     2
+    [Teardown]    Close All Browsers
+
+add store success
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate store page
+    add store success
+    sleep     2
+    [Teardown]    Close All Browsers
+
+add store fail
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate store page
+    add store fail
+    sleep     2
+    [Teardown]    Close All Browsers
+
+back to store page from add store
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate store page
+    back to store page from add store
+    sleep     2
+    [Teardown]    Close All Browsers
+
+edit store success
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate store page
+    edit store success
+    sleep     2
+    [Teardown]    Close All Browsers
+
+edit store fail
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate store page
+    edit store fail
+    # clear text manual
+    sleep     2
+    [Teardown]    Close All Browsers
+
+back to store page from edit store
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate store page
+    back to store page from edit store
+    sleep     2
+    [Teardown]    Close All Browsers
+
+delete store success
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate store page
+    delete store success
+    sleep     2
+    [Teardown]    Close All Browsers
+
+delete store fail case no username and Password
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate store page
+    delete store fail case no username and Password
+    sleep     2
+    [Teardown]    Close All Browsers
+
+delete store fail case username an Password wrong
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate store page
+    delete store fail case username an Password wrong
+    sleep     2
+    [Teardown]    Close All Browsers
+
+validate others page
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate other page
+    sleep     2
+    [Teardown]    Close All Browsers
+
+close popup others page
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate other page
+    close popup others page
+    sleep     2
+    [Teardown]    Close All Browsers
+
+validate problem employee page
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -569,7 +714,7 @@ case89
     sleep     2
     [Teardown]    Close All Browsers
 
-case90
+get problem
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -578,7 +723,7 @@ case90
     sleep     2
     [Teardown]    Close All Browsers
 
-case91
+give problem
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -587,11 +732,29 @@ case91
     sleep     2
     [Teardown]    Close All Browsers
 
-case92
+respond problem
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
     validate problem employee page
     respond problem
+    sleep     2
+    [Teardown]    Close All Browsers
+
+back to problem employee page from respond problem
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate problem employee page
+    back to problem employee page from respond problem
+    sleep     2
+    [Teardown]    Close All Browsers
+
+back to problem employee detail
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate problem employee page
+    back to problem employee detail
     sleep     2
     [Teardown]    Close All Browsers

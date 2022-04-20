@@ -185,3 +185,14 @@ ${getproblem03}    ประเภทของปัญหา
 ${getproblem04}    ประเภทย่อยของปัญหา
 ${getproblem05}    รายละเอียดปัญหา
 ${getproblem06}    รูปภาพหลักฐานหน้าจอที่พบปัญหา
+
+# others page
+${other01}    อื่น ๆ
+${other02}    ฝ่ายลูกค้าสัมพันธ์
+${other03}    ดูดี อินดีด คอร์ปอเรชั่น จำกัด
+${other04}    ( Dudee-Indeed Corporation )
+${other05}    187/24 Chang Klan Road, Muang Chiang Mai District, Chiang Mai, 50100
+${other06}    062-508-7576
+${other07}    contact@dudee-indeed.com
+${other08}    www.dudee-indeed.com
+${other09}    Dudee Indeed

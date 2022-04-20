@@ -8,6 +8,65 @@ login owner
     Input Text 	 //*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/input[2] 	 123456
     Click Button 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/button
 
+login fail case01
+    Input Text 	 //*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/input[1] 	 Dudeeindeed
+    Input Text 	 //*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/input[2] 	 123456
+    Click Button 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/button
+    sleep    2
+    Wait Until Element Contains    locator=//*[@id="__layout"]/div/div[2]/div/div/div[1]/div/div/div[2]/div/div/div[1]/div[2]/p    text=เข้าสู่ระบบไม่สำเร็จ
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[1]/div/div/div[2]/div/div/div[1]/div[2]/p    expected=เข้าสู่ระบบไม่สำเร็จ
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[1]/div/div/div[2]/div/div/div[1]/div[2]/div/p    expected=Username or Password Incorrect
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[1]/div/div/div[2]/div/div/div[2]/button
+
+login fail case02
+    Input Text 	 //*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/input[1] 	 Dudeeindeed.pt
+    Input Text 	 //*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/input[2] 	 1234567
+    Click Button 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/button
+    sleep    2
+    Wait Until Element Contains    locator=//*[@id="__layout"]/div/div[2]/div/div/div[1]/div/div/div[2]/div/div/div[1]/div[2]/p    text=เข้าสู่ระบบไม่สำเร็จ
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[1]/div/div/div[2]/div/div/div[1]/div[2]/p    expected=เข้าสู่ระบบไม่สำเร็จ
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[1]/div/div/div[2]/div/div/div[1]/div[2]/div/p    expected=Username or Password Incorrect
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[1]/div/div/div[2]/div/div/div[2]/button
+
+login fail case03
+    Click Element    locator=//*[@id="__layout"]/div/div[2]/div[1]/aside/div[2]/div/span[1]
+    sleep  2
+    Wait Until Element Contains    locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div[2]/div[1]/div[1]/p    text=ชื่อผู้ใช้
+    Click Element    locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div/div[1]/div/div[3]/button[2]
+    sleep  2
+    Wait Until Element Contains    locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[1]/p    text=เปลี่ยนรหัสผ่าน
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div[1]/div/div[1]/p[1]    expected=รหัสผ่านเดิม
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div[2]/div/div[1]/p[1]    expected=รหัสผ่านใหม่
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div[3]/div/div[1]/p[1]    expected=ยืนยันรหัสผ่านใหม่
+    Input Text    //div[@class='block p-2 border-b']//div[1]//div[1]//div[2]//div[1]//input[1]    123456
+    Input Text    //div[@class='modal-body']//div[2]//div[1]//div[2]//div[1]//input[1]    1234567    
+    Input Text    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div[3]/div/div[2]/div/input    1234567
+    Click Element 	  locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[3]/div/div[2]
+    sleep   2
+    Click Element 	  locator=//*[@id="__layout"]/div/div[2]/div[1]/aside/div[2]/div/span[3]
+    sleep   3
+    Wait Until Element Contains    locator=//*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/p    text=Welcome To HRM
+    Input Text 	 //*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/input[1] 	 Dudeeindeed.pt
+    Input Text 	 //*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/input[2] 	 123456
+    Click Button 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/button
+    sleep   2
+    Wait Until Element Contains    locator=//*[@id="__layout"]/div/div[2]/div/div/div[1]/div/div/div[2]/div/div/div[1]/div[2]/p    text=เข้าสู่ระบบไม่สำเร็จ
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[1]/div/div/div[2]/div/div/div[1]/div[2]/p    expected=เข้าสู่ระบบไม่สำเร็จ
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[1]/div/div/div[2]/div/div/div[1]/div[2]/div/p    expected=Username or Password Incorrect
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[1]/div/div/div[2]/div/div/div[2]/button
+
+login new case01
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/div[2]/span
+    Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[1]/div/div/div[1]/p/span 	 text=ลืมรหัสผ่าน
+    Input Text    //*[@id="__layout"]/div/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[2]/div/input    Dudeeindeed.pt
+    Input Text    //*[@id="__layout"]/div/div[2]/div/div/div[1]/div/div/div[2]/div/div[2]/div/div[2]/div/input    1234567
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[1]/div/div/div[3]/div/button
+    sleep  2
+    Wait Until Element Contains    locator=//*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/p    text=Welcome To HRM
+    Input Text 	 //*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/input[1] 	 Dudeeindeed.pt
+    Input Text 	 //*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/input[2] 	 1234567
+    Click Button 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div/div[2]/div/div/button
+
 validate homepage
     Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div[1]/div[1]/div/div[1]/span 	 text=${text01}
     Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div[1]/div[1]/div/div[1]/span 	 expected=${text01}

@@ -9,27 +9,36 @@ Suite Teardown     Close All Browsers
 
 *** Test Cases ***
 
-test43
-    Open Browser    ${host}    browser=chrome
-    Maximize Browser Window
-    login hr lead
-    validate document leave
-    [Teardown]    Close All Browsers
+# test43
+#     Open Browser    ${host}    browser=chrome
+#     Maximize Browser Window
+#     login hr lead
+#     validate document leave
+#     [Teardown]    Close All Browsers
 
-test44
-    Open Browser    ${host}    browser=chrome
-    Maximize Browser Window
-    login hr lead
-    validate document leave
-    detail document leave 
-    sleep   3
-    [Teardown]    Close All Browsers
+# test44
+#     Open Browser    ${host}    browser=chrome
+#     Maximize Browser Window
+#     login hr lead
+#     validate document leave
+#     detail document leave 
+#     sleep   3
+#     [Teardown]    Close All Browsers
 
-test46
+# test46
+#     Open Browser    ${host}    browser=chrome
+#     Maximize Browser Window
+#     login hr lead
+#     validate document leave
+#     accept document leave
+#     sleep   3
+#     [Teardown]    Close All Browsers
+
+new case01
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login hr lead
     validate document leave
-    accept document leave
+    
     sleep   3
     [Teardown]    Close All Browsers

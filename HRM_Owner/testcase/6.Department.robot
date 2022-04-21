@@ -9,7 +9,7 @@ Suite Teardown     Close All Browsers
 
 *** Test Cases ***
 
-test15
+validate department page
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -17,7 +17,7 @@ test15
     sleep     2
     [Teardown]    Close All Browsers
 
-test16
+search department
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -26,7 +26,7 @@ test16
     sleep     2
     [Teardown]    Close All Browsers
 
-test17
+add department
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -35,7 +35,7 @@ test17
     sleep     2
     [Teardown]    Close All Browsers
 
-test18
+edit department
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -44,7 +44,7 @@ test18
     sleep     2
     [Teardown]    Close All Browsers
   
-test19
+delete department
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -52,3 +52,49 @@ test19
     delete department
     sleep     2
     [Teardown]    Close All Browsers
+
+filter department no data
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate department page
+    filter department no data
+    sleep     2
+    [Teardown]    Close All Browsers
+
+add department fail
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate department page
+    add department fail
+    sleep     2
+    [Teardown]    Close All Browsers
+
+add department duplicate Information
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate department page
+    add department duplicate Information
+    sleep     2
+    [Teardown]    Close All Browsers
+
+delete department with employee in it
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate department page
+    delete department with employee in it
+    sleep     2
+    [Teardown]    Close All Browsers
+
+delete department fail case username and Password wrong
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate department page
+    delete department fail case username and Password wrong
+    sleep     2
+    [Teardown]    Close All Browsers
+

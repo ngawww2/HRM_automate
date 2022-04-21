@@ -8,7 +8,8 @@ Suite Teardown     Close All Browsers
 
 
 *** Test Cases ***
-test08
+
+validate major page
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -17,7 +18,7 @@ test08
     sleep     2
     [Teardown]    Close All Browsers
 
-test09
+search major
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -27,7 +28,7 @@ test09
     sleep     2
     [Teardown]    Close All Browsers
 
-test10
+add major
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -35,7 +36,7 @@ test10
     sleep     2
     [Teardown]    Close All Browsers
 
-test11
+edit major
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -44,7 +45,7 @@ test11
     sleep     2
     [Teardown]    Close All Browsers
 
-test12
+delete major
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -53,7 +54,7 @@ test12
     sleep     2
     [Teardown]    Close All Browsers
 
-test13
+add GPS and wifi
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -64,11 +65,70 @@ test13
     [Teardown]    Close All Browsers
 
 
-test14
+setting payment
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
     validate major page 
     setting payment
+    sleep     2
+    [Teardown]    Close All Browsers
+
+search major case no data
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate major page
+    search major case no data
+    validate sidebar
+    sleep     2
+    [Teardown]    Close All Browsers
+
+add major incomplete info
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    add major incomplete info
+    sleep     2
+    [Teardown]    Close All Browsers
+
+add GPS and wifi fail case incomplete info
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate major page
+    validate GPS and wifi 
+    add GPS and wifi fail case incomplete info
+    sleep     2
+    [Teardown]    Close All Browsers
+
+delete wifi and back to major page
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate major page
+    validate GPS and wifi 
+    delete wifi and back to major page
+    sleep     2
+    [Teardown]    Close All Browsers
+
+back to major page
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate major page
+    validate GPS and wifi 
+    back to major page
+    sleep     2
+    [Teardown]    Close All Browsers
+
+# delete major fail case still have employee
+
+delete major fail case username and Password wrong
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate major page
+    delete major fail case username and Password wrong
     sleep     2
     [Teardown]    Close All Browsers

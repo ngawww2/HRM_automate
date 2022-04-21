@@ -9,7 +9,7 @@ Suite Teardown     Close All Browsers
 
 *** Test Cases ***
 
-test04
+DashBoard Salary
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner

@@ -78,6 +78,8 @@ setting scanner
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[3]/div/div/button[2]
     sleep  1
 
+############################################## request register ##############################################
+
 validate request register
     Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[1]/aside/div[1]/div[3]/div[10]/p 	 text=คำขอลงทะเบียน
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[1]/aside/div[1]/div[3]/div[10]/p
@@ -130,6 +132,53 @@ accept request register
     sleep  3
     # Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[1]/div[2]/button[4]
 
+filter name with english name
+    Input Text  //*[@placeholder="ค้นหาด้วยชื่อพนักงาน"]  nipaporn
+    sleep  2
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/tbody/tr/td[2]    expected=นิภาพร จันต๊ะวงค์   
+
+filter name with last name
+    Input Text  //*[@placeholder="ค้นหาด้วยชื่อพนักงาน"]  จันต๊ะวงค์
+    sleep  2
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/tbody/tr/td[2]    expected=นิภาพร จันต๊ะวงค์   
+
+filter name case no data
+    Input Text  //*[@placeholder="ค้นหาด้วยชื่อพนักงาน"]  1
+    sleep  2
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/div/h2    expected=ไม่มีรายการข้อมูลสำหรับแสดงผล   
+
+filter ID case no data
+    Input Text  //*[@placeholder="ค้นหาด้วยรหัสพนักงาน"]    1
+    sleep  2
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/div/h2    expected=ไม่มีรายการข้อมูลสำหรับแสดงผล   
+
+filter ID case accept request already
+    Input Text  //*[@placeholder="ค้นหาด้วยรหัสพนักงาน"]    36220331-0001
+    sleep  2
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/div/h2    expected=ไม่มีรายการข้อมูลสำหรับแสดงผล   
+
+filter telephone number case no data
+    Input Text  //*[@placeholder="ค้นหาด้วยเบอร์มือถือพนักงาน"]  0000000000
+    sleep  2
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/div/h2    expected=ไม่มีรายการข้อมูลสำหรับแสดงผล   
+
+accept request fail 
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/tbody/tr/td[7]/i
+    sleep  2
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[1]/div[2]/button[4]
+
+respon message to employee fail
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/tbody/tr/td[7]/i
+    sleep  2
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[1]/div[2]/button[2]
+    sleep  2
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div/div[1]/div/div/div[3]/div/button[2]
+
+back to request register page 
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/tbody/tr/td[7]/i
+    sleep  2
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div/div/div[1]/div[2]/button[1]
+    
 ############################################## document leave ##############################################
 
 validate document leave

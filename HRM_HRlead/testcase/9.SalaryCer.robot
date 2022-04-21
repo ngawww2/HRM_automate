@@ -25,3 +25,11 @@ test49
     accept salary certificate
     sleep   3
     [Teardown]    Close All Browsers
+
+no salary certificate
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login hr lead
+    validate salary certificate no data
+    sleep   3
+    [Teardown]    Close All Browsers

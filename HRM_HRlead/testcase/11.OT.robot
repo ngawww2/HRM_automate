@@ -71,3 +71,53 @@ test58
 	accept document ot
 	sleep   3
 	[Teardown]    Close All Browsers
+
+ot employee name filter no data
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login hr lead
+    validate document ot
+	ot employee name filter no data
+	sleep   3
+	[Teardown]    Close All Browsers
+
+
+ot employee date filter no data
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login hr lead
+    validate document ot
+	ot employee date filter no data
+	sleep   3
+	[Teardown]    Close All Browsers
+
+
+ot employee status filter no data
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login hr lead
+    validate document ot
+	ot employee status filter no data
+	sleep   3
+	[Teardown]    Close All Browsers
+
+
+ot employee position filter no data
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login hr lead
+    validate document ot
+	ot employee position filter no data
+	sleep   3
+	[Teardown]    Close All Browsers  
+
+ 
+back to document ot
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login hr lead
+	validate document ot
+	detail document ot
+	back to document ot
+	sleep   3
+	[Teardown]    Close All Browsers

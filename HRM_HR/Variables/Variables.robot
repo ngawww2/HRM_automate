@@ -206,3 +206,16 @@ ${getproblem03}    ประเภทของปัญหา
 ${getproblem04}    ประเภทย่อยของปัญหา
 ${getproblem05}    รายละเอียดปัญหา
 ${getproblem06}    รูปภาพหลักฐานหน้าจอที่พบปัญหา
+
+
+# profile setting role HR
+
+${profileSettingHR01}    ชื่อผู้ใช้
+${profileSettingHR02}    dudeeindeedsh.pt
+${profileSettingHR03}    สิทธิ์การเข้าถึง
+${profileSettingHR04}    HR STAFF
+${profileSettingHR05}    อีเมล
+${profileSettingHR06}    123@gmail.com
+${profileSettingHR07}    เบอร์โทรศัพท์
+${profileSettingHR08}    0999999999
+${profileSettingHR09}    ที่อยู่

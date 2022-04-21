@@ -8,7 +8,10 @@ Test Teardown     Close All Browsers
 Suite Teardown     Close All Browsers
 
 *** Test Cases ***
-test50
+
+# no salary advance
+
+validate salary advance
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -16,7 +19,7 @@ test50
     sleep   3
     [Teardown]    Close All Browsers
 
-test51
+accept salary advance
 	Open Browser    ${host}    browser=chrome
 	Maximize Browser Window
 	login owner
@@ -24,3 +27,5 @@ test51
     accept salary advance
 	sleep   3
 	[Teardown]    Close All Browsers
+
+# cancel salary advance

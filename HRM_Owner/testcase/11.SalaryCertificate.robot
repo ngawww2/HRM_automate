@@ -8,7 +8,15 @@ Test Teardown     Close All Browsers
 Suite Teardown     Close All Browsers
 
 *** Test Cases ***
-test47
+no salary certificate
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate salary certificate no data
+    sleep   3
+    [Teardown]    Close All Browsers
+
+validate salary certificate
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -16,7 +24,7 @@ test47
     sleep   3
     [Teardown]    Close All Browsers
 
-test49
+accept salary certificate
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -24,3 +32,5 @@ test49
     accept salary certificate
     sleep   3
     [Teardown]    Close All Browsers
+
+# cancel salary certificate

@@ -1,6 +1,7 @@
 *** Settings ***
 Library    Selenium2Library
 Resource    ../keyword/keyword.robot
+Resource    ../keyword/keyword2.robot
 Resource    ../keyword/keyword3.robot
 Resource    ../Variables/Variables.robot
 Test Teardown     Close All Browsers
@@ -49,5 +50,32 @@ case92
     login HR
     validate problem employee page
     respond problem
+    sleep     2
+    [Teardown]    Close All Browsers
+
+close popup others page
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login HR
+    validate other page
+    close popup others page
+    sleep     2
+    [Teardown]    Close All Browsers
+
+back to problem employee page from respond problem
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login HR
+    validate problem employee page
+    back to problem employee page from respond problem
+    sleep     2
+    [Teardown]    Close All Browsers
+
+back to problem employee detail
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login HR
+    validate problem employee page
+    back to problem employee detail
     sleep     2
     [Teardown]    Close All Browsers

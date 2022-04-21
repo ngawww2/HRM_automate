@@ -397,3 +397,15 @@ ${getproblem03}    ประเภทของปัญหา
 ${getproblem04}    ประเภทย่อยของปัญหา
 ${getproblem05}    รายละเอียดปัญหา
 ${getproblem06}    รูปภาพหลักฐานหน้าจอที่พบปัญหา
+
+# profile setting role HRLead
+
+${profileSettingHRLead01}    ชื่อผู้ใช้
+${profileSettingHRLead02}    dudeeindeedlh.pt
+${profileSettingHRLead03}    สิทธิ์การเข้าถึง
+${profileSettingHRLead04}    HR LEAD
+${profileSettingHRLead05}    อีเมล
+${profileSettingHRLead06}    010101@gmail.chrome
+${profileSettingHRLead07}    เบอร์โทรศัพท์
+${profileSettingHRLead08}    0888888888
+${profileSettingHRLead09}    ที่อยู่

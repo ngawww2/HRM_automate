@@ -8,7 +8,7 @@ Test Teardown     Close All Browsers
 Suite Teardown     Close All Browsers
 
 *** Test Cases ***
-test52
+validate document ot
 	Open Browser    ${host}    browser=chrome
 	Maximize Browser Window
 	login owner
@@ -17,7 +17,7 @@ test52
 	[Teardown]    Close All Browsers   
 
 
-test53
+ot employee name filter
 	Open Browser    ${host}    browser=chrome
 	Maximize Browser Window
 	login owner
@@ -26,7 +26,16 @@ test53
 	sleep   3
 	[Teardown]    Close All Browsers
 
-test54
+ot employee name filter no data
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login owner
+    validate document ot
+	ot employee name filter no data
+	sleep   3
+	[Teardown]    Close All Browsers
+
+ot employee date filter
 	Open Browser    ${host}    browser=chrome
 	Maximize Browser Window
 	login owner
@@ -35,7 +44,16 @@ test54
 	sleep   3
 	[Teardown]    Close All Browsers
 
-test55
+ot employee date filter no data
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login owner
+    validate document ot
+	ot employee date filter no data
+	sleep   3
+	[Teardown]    Close All Browsers
+
+ot employee status filter
 	Open Browser    ${host}    browser=chrome
 	Maximize Browser Window
 	login owner
@@ -44,16 +62,34 @@ test55
 	sleep   3
 	[Teardown]    Close All Browsers
 
-test56
+ot employee status filter no data
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login owner
+    validate document ot
+	ot employee status filter no data
+	sleep   3
+	[Teardown]    Close All Browsers
+
+ot employee position filter
 	Open Browser    ${host}    browser=chrome
 	Maximize Browser Window
 	login owner
     validate document ot
 	ot employee position filter
 	sleep   3
+	[Teardown]    Close All Browsers  
+
+ot employee position filter no data
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login owner
+    validate document ot
+	ot employee position filter no data
+	sleep   3
 	[Teardown]    Close All Browsers    
 
-test57
+detail document ot
 	Open Browser    ${host}    browser=chrome
 	Maximize Browser Window
 	login owner
@@ -62,7 +98,18 @@ test57
 	sleep   3
 	[Teardown]    Close All Browsers
 
-test58
+back to document ot
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login owner
+	validate document ot
+	detail document ot
+	back to document ot
+	sleep   3
+	[Teardown]    Close All Browsers
+
+
+accept document ot
 	Open Browser    ${host}    browser=chrome
 	Maximize Browser Window
 	login owner
@@ -71,3 +118,5 @@ test58
 	accept document ot
 	sleep   3
 	[Teardown]    Close All Browsers
+
+# cancel document ot

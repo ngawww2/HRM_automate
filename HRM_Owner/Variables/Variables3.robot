@@ -196,3 +196,16 @@ ${other06}    062-508-7576
 ${other07}    contact@dudee-indeed.com
 ${other08}    www.dudee-indeed.com
 ${other09}    Dudee Indeed
+
+# profile setting role owner
+
+${profileSettingOwner01}    ชื่อผู้ใช้
+${profileSettingOwner02}    dudeeindeed.pt
+${profileSettingOwner03}    สิทธิ์การเข้าถึง
+${profileSettingOwner04}    OWNER
+${profileSettingOwner05}    อีเมล
+${profileSettingOwner06}    010101@gmail.chrome
+${profileSettingOwner07}    เบอร์โทรศัพท์
+${profileSettingOwner08}    0202200022
+${profileSettingOwner09}    ที่อยู่
+${profileSettingOwner10}    11/12

@@ -9,7 +9,7 @@ Suite Teardown     Close All Browsers
 
 *** Test Cases ***
 
-test05
+validate business info
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -18,7 +18,7 @@ test05
     sleep     2
     [Teardown]    Close All Browsers
 
-test06
+balance check
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
@@ -27,12 +27,32 @@ test06
     sleep     2
     [Teardown]    Close All Browsers
 
-test07
+edit info
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login owner
     validate edit info
     edit info
+    validate sidebar
+    sleep     2
+    [Teardown]    Close All Browsers
+
+edit info fail case incomplete info
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate edit info
+    edit info fail case incomplete info
+    validate sidebar
+    sleep     2
+    [Teardown]    Close All Browsers
+
+back to business info
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate edit info
+    back to business info
     validate sidebar
     sleep     2
     [Teardown]    Close All Browsers

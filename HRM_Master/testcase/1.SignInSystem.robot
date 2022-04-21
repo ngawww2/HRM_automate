@@ -14,10 +14,34 @@ case01-02
     sleep   3
     [Teardown]    Close All Browsers
 
-case03
+new case 01
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login fail case01
+    sleep     2
+    [Teardown]    Close All Browsers    
+
+new case 02
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login fail case02
+    sleep     2
+    [Teardown]    Close All Browsers    
+
+new case 03
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login Master
     validate homepage
-    sleep   3
-    [Teardown]    Close All Browsers
+    sleep     2
+    login fail case03
+    sleep    2
+    [Teardown]    Close All Browsers    
+
+new case 04
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login new case01
+    validate homepage
+    sleep     2
+    [Teardown]    Close All Browsers    

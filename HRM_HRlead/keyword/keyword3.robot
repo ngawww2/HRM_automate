@@ -55,6 +55,18 @@ delete scanner
     Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/div[2]/div[1]/p[1]    expected=Password
     sleep  3
 
+back to scan page
+    sleep  2
+    Click Element    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[1]/div[2]/button
+
+edit scanner detail fail
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/table/tbody/tr/td[9]/i[1]
+    Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[1]/p 	 text=แก้ไขข้อมูลเครื่องสแกน
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[1]/p    expected=แก้ไขข้อมูลเครื่องสแกน
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div/div/div[1]/p[1]    expected=ชื่อเครื่องสแกน
+    # Input Text    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div/div/div[2]/div/input    ${EMPTY}
+    sleep  5
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[3]/div/div/button[2]
 
 ############################################## SalaryRule ##############################################
 

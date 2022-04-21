@@ -43,3 +43,24 @@ case75
     delete scanner
     sleep     2
     [Teardown]    Close All Browsers
+
+# back to scan page
+#     Open Browser    ${host}    browser=chrome
+#     Maximize Browser Window
+#     login hr lead
+#     validate scan page
+#     validate scan privacy employee
+#     back to scan page
+#     validate scan page
+#     sleep     2
+#     [Teardown]    Close All Browsers
+
+# edit scanner detail fail
+#     Open Browser    ${host}    browser=chrome
+#     Maximize Browser Window
+#     login hr lead
+#     validate scan page
+#     edit scanner detail fail
+#     # clear text manual
+#     sleep     2
+#     [Teardown]    Close All Browsers

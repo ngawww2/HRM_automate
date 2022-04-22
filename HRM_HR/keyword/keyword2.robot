@@ -152,8 +152,8 @@ search employee id checkin
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[1]/div[3]/div/button[2]
     Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/table/thead/tr[1]/th[2] 	 text=${checkin13} 	
     sleep     5
-    Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/table/tbody/tr[1]/td[2] 	 text=11220222-0001
-    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/table/tbody/tr[1]/td[2] 	 expected=11220222-0001
+    Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/table/tbody/tr[1]/td[2] 	 text=23220314-0001
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/table/tbody/tr[1]/td[2] 	 expected=23220314-0001
 
 edit employee checkin data
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/tbody/tr[3]/td[6]/i
@@ -185,6 +185,95 @@ report checkin data
     Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[1]/div[3]/div/button[2]
     Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/table/thead/tr[1]/th[2] 	 text=${checkin13} 
     Click Element 	 locator=//*[@id="report"]/button
+
+validate Add Attendance case No Data
+    Click Element 	 //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div[2]/button
+    sleep  3
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[3]/div[2]/h2    expected=ข้อมูลเวลาเข้างานยังไม่ถูกสร้าง
+
+validate Add Attendance Fail case no Position
+    Click Element 	 //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div[2]/button
+    sleep  2
+    Select From List By Label    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[1]/div[2]/select    ทดสอบรายเดือน
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[3]/button
+    sleep  2
+    Element Text Should Be    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]/div/div/div[1]/div[2]/p    ดำเนินการไม่สำเร็จ
+
+Click back to Attendance page
+    Click Element 	 //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div[2]/button
+    sleep  2
+    Click Element    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[1]/button
+
+validate daily Attendance from Calendar
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/tbody/tr[3]/td[6]/i
+    sleep  2
+    Click Element    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/div/div[2]/div[1]/div/div[2]/div[12]/div/div/div
+    sleep  2
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div[2]/table/thead/tr/th[2] 	 expected=${editCheckin01}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div[2]/table/thead/tr/th[3] 	 expected=${editCheckin02}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div[2]/table/thead/tr/th[4] 	 expected=${editCheckin03}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div[2]/table/thead/tr/th[5] 	 expected=${editCheckin04}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div[2]/table/thead/tr/th[6] 	 expected=${editCheckin05}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div[2]/table/thead/tr/th[7] 	 expected=${editCheckin06}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div[2]/table/thead/tr/th[8] 	 expected=${editCheckin07}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div[2]/table/thead/tr/th[9] 	 expected=${editCheckin08}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div[2]/table/thead/tr/th[10] 	 expected=${editCheckin09}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div[2]/table/thead/tr/th[11] 	 expected=${editCheckin10}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div[2]/table/thead/tr/th[12] 	 expected=${editCheckin11}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div[2]/table/thead/tr/th[13] 	 expected=${editCheckin12}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div[2]/table/thead/tr/th[14] 	 expected=${editCheckin13}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div/div[2]/table/thead/tr/th[15] 	 expected=${editCheckin14}
+
+edit Attendance from Calendar&List
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div/div[2]/table/tbody/tr[1]/td[15]/button[1]/i
+    sleep     3
+    Click Element 	 //*[@id="__layout"]/div/div[2]/div/div[2]/table/tbody/tr[1]/td[15]/button[1]/i
+
+cancel edit Attendance from Calendar&List
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div/div[2]/table/tbody/tr[1]/td[15]/button[1]/i
+    sleep     3
+    Click Element    //*[@id="__layout"]/div/div[2]/div/div[2]/table/tbody/tr/td[15]/button[2]/i
+
+delete Attendance from Calendar&List
+    Click Element 	 //*[@id="__layout"]/div/div[2]/div/div[2]/table/tbody/tr[1]/td[15]/button[2]/i
+    sleep  2
+    Click Element 	 //*[@id="__layout"]/div/div[2]/div/div[1]/div/div/div[2]/div[2]/div[2]
+    sleep  2
+
+delete Attendance from Calendar&List fail
+    Click Element 	 //*[@id="__layout"]/div/div[2]/div/div[2]/table/tbody/tr[1]/td[15]/button[2]/i
+    sleep  2
+    Click Element 	 //*[@id="__layout"]/div/div[2]/div/div[1]/div/div/div[2]/div[2]/div[2]
+    sleep  2
+
+back to Attendance from Calendar page
+    Click Element    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/tbody/tr[3]/td[6]/i
+    sleep  2
+    Click Element    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/div/div[2]/div[1]/div/div[2]/div[12]/div/div/div
+    sleep  2
+    Click Element    //*[@id="__layout"]/div/div[2]/div/div[1]/div/button
+
+back to Attendance page
+    Click Element    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/tbody/tr[3]/td[6]/i
+    sleep  2
+    Click Element    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[1]/div[2]/button
+
+validate Attendance from List
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/table/tbody/tr[3]/td[6]/i
+    Wait Until Element Contains 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/div/div[2]/div[1]/div/div[2]/div[1] 	 text=อา.
+    Click Element 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[1]/div[3]/div/button[2]
+    sleep  2
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/table/thead/tr[1]/th[2] 	 expected=${checkin13}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/table/thead/tr[1]/th[3] 	 expected=${checkin14}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/table/thead/tr[1]/th[4]    expected=${checkin15}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/table/thead/tr[1]/th[5]    expected=${checkin16}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/table/thead/tr[2]/th[1]    expected=${checkin17}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/table/thead/tr[2]/th[2]    expected=${checkin18}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/table/thead/tr[2]/th[3]    expected=${checkin19}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/table/thead/tr[2]/th[4]    expected=${checkin20}
+    Element Text Should Be 	 locator=//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/table/thead/tr[2]/th[5]    expected=${checkin21}
+    Click Element    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[3]/table/tbody/tr[1]/td[10]/i 
+    sleep  2
 
 ############################################## Other ##############################################
 

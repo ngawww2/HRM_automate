@@ -93,3 +93,72 @@ test36
     validate employee info page 
     setting scanner
     [Teardown]    Close All Browsers
+
+new case01
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate employee info page 
+    filter name english
+    sleep     2
+    [Teardown]    Close All Browsers
+
+new case02
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate employee info page 
+    filter last name
+    sleep     2
+    [Teardown]    Close All Browsers
+
+new case03
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate employee info page 
+    filter name without data
+    sleep     2
+    [Teardown]    Close All Browsers
+
+new case04
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate employee info page 
+    filter number without data
+    sleep     2
+    [Teardown]    Close All Browsers
+
+new case05
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate employee info page 
+    filter phone without data
+    sleep     2
+    [Teardown]    Close All Browsers
+
+new case06
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate employee info page 
+    add employee fail
+    [Teardown]    Close All Browsers
+
+new case07
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate employee info page 
+    edit employee fail
+    [Teardown]    Close All Browsers
+
+new case08
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate employee info page 
+    delete employee fail
+    [Teardown]    Close All Browsers

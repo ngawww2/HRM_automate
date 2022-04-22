@@ -8,7 +8,7 @@ Suite Teardown     Close All Browsers
 
 *** Test Cases ***
 
-case01-03
+dashboard
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR

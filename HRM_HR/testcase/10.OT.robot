@@ -9,7 +9,7 @@ Suite Teardown     Close All Browsers
 
 *** Test Cases ***
 
-case52
+validate document ot
 	Open Browser    ${host}    browser=chrome
 	Maximize Browser Window
 	login HR
@@ -17,7 +17,7 @@ case52
 	sleep   3
 	[Teardown]    Close All Browsers   
 
-case53
+ot employee name filter
 	Open Browser    ${host}    browser=chrome
 	Maximize Browser Window
 	login HR
@@ -26,7 +26,16 @@ case53
 	sleep   3
 	[Teardown]    Close All Browsers
 
-test54
+ot employee name filter no data
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login HR
+    validate document ot
+	ot employee name filter no data
+	sleep   3
+	[Teardown]    Close All Browsers
+
+ot employee date filter
 	Open Browser    ${host}    browser=chrome
 	Maximize Browser Window
 	login HR 
@@ -35,7 +44,16 @@ test54
 	sleep   3
 	[Teardown]    Close All Browsers
 
-test55
+ot employee date filter no data
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+    login HR
+    validate document ot
+	ot employee date filter no data
+	sleep   3
+	[Teardown]    Close All Browsers
+
+ot employee status filter
 	Open Browser    ${host}    browser=chrome
 	Maximize Browser Window
 	login HR
@@ -44,7 +62,16 @@ test55
 	sleep   3
 	[Teardown]    Close All Browsers
 
-test56
+ot employee status filter no data
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login HR
+    validate document ot
+	ot employee status filter no data
+	sleep   3
+	[Teardown]    Close All Browsers
+
+ot employee position filter
 	Open Browser    ${host}    browser=chrome
 	Maximize Browser Window
 	login HR
@@ -53,7 +80,16 @@ test56
 	sleep   3
 	[Teardown]    Close All Browsers    
 
-test57
+ot employee position filter no data
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login HR
+    validate document ot
+	ot employee position filter no data
+	sleep   3
+	[Teardown]    Close All Browsers  
+
+detail document ot
 	Open Browser    ${host}    browser=chrome
 	Maximize Browser Window
 	login HR
@@ -62,7 +98,16 @@ test57
 	sleep   3
 	[Teardown]    Close All Browsers
 
-test58
+back to document ot page
+	Open Browser    ${host}    browser=chrome
+	Maximize Browser Window
+	login HR
+	validate document ot
+	back to document ot page
+	sleep   3
+	[Teardown]    Close All Browsers
+
+accept document ot
 	Open Browser    ${host}    browser=chrome
 	Maximize Browser Window
 	login HR
@@ -71,3 +116,5 @@ test58
 	accept document ot
 	sleep   3
 	[Teardown]    Close All Browsers
+
+# cancel document ot

@@ -28,7 +28,7 @@ ${sidebar12}    เอกสารขอ OT
 
 #business info
 ${business01}    ที่อยู่
-${business02}    11/1234
+${business02}    11/12
 ${business03}    รายละเอียด
 ${business04}    สำหรับการทดสอบระบบ
 ${business05}    For Test Only
@@ -46,10 +46,10 @@ ${business16}    โทรศัพท์ : -
 ${business17}    แฟกซ์ : -
 
 # major page text
-${major01}    11/12
-${major02}    Dudee-Indeed-Production Test
-${major03}    สำหรับเทสเท่านั้น
-${major04}    มือถือ : 0202200022
+${major01}    11/1234
+${major02}    test
+${major03}    สำหรับการทดสอบระบบ
+${major04}    มือถือ : -
 
 # department page text
 ${department01}    รายการข้อมูลแผนก

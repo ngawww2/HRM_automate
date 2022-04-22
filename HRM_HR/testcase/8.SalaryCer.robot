@@ -9,7 +9,7 @@ Suite Teardown     Close All Browsers
 
 *** Test Cases ***
 
-case37
+validate salary certificate
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR
@@ -17,7 +17,15 @@ case37
     sleep     2
     [Teardown]    Close All Browsers   
 
-case49
+validate salary certificate case no data
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login HR
+    validate salary certificate case no data
+    sleep     2
+    [Teardown]    Close All Browsers   
+
+accept salary certificate
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR
@@ -25,3 +33,5 @@ case49
     accept salary certificate
     sleep   3
     [Teardown]    Close All Browsers
+
+# cancel salary certificate

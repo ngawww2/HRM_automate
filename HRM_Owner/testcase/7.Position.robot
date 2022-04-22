@@ -70,3 +70,48 @@ test26
     delete rank
     sleep     2
     [Teardown]    Close All Browsers
+
+new case 01
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate rank page
+    search position no data
+    sleep     2
+    [Teardown]    Close All Browsers
+
+new case 02
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate rank page
+    add position fail
+    sleep     2
+    [Teardown]    Close All Browsers
+
+new case 03
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate rank page
+    add position duplicate data
+    sleep     2
+    [Teardown]    Close All Browsers
+
+new case 04
+    Open Browser    ${host}    browser=chrome
+    Maximize Browser Window
+    login owner
+    validate rank page
+    edit position delete data
+    sleep     2
+    [Teardown]    Close All Browsers
+
+# new case 05
+#     Open Browser    ${host}    browser=chrome
+#     Maximize Browser Window
+#     login owner
+#     validate rank page
+#     delete position with employee in it  
+#     sleep     2
+#     [Teardown]    Close All Browsers

@@ -8,7 +8,7 @@ Suite Teardown     Close All Browsers
 
 *** Test Cases ***
 
-case05
+validate business info
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR

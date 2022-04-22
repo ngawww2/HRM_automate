@@ -8,7 +8,7 @@ Suite Teardown     Close All Browsers
 
 *** Test Cases ***
 
-case20
+validate rank page 
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR
@@ -17,7 +17,7 @@ case20
     sleep     2
     [Teardown]    Close All Browsers
 
-case21
+search rank
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR
@@ -27,7 +27,7 @@ case21
     sleep     2
     [Teardown]    Close All Browsers
 
-case22
+search department in rank page
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR
@@ -37,7 +37,7 @@ case22
     sleep     2
     [Teardown]    Close All Browsers
 
-case23
+search salary category
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR
@@ -47,7 +47,7 @@ case23
     sleep     2
     [Teardown]    Close All Browsers
 
-case24
+add rank
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR
@@ -57,7 +57,7 @@ case24
     sleep     2
     [Teardown]    Close All Browsers
 
-case25
+edit rank
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR
@@ -66,7 +66,7 @@ case25
     sleep     2
     [Teardown]    Close All Browsers
 
-case26
+delete rank
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR

@@ -312,29 +312,7 @@ ${formula08}    รายละเอียด
 ${formula09}    จัดการ
 ${formula10}    + สูตรคำนวณเงินเดือน
 
-# formula detail page
-# ${formulaDetail01}    สร้างสูตรคำนวณเงินเดือน
-# ${formulaDetail01}    รายละเอียดสูตรคำนวณเงินเดือน
-# ${formulaDetail01}    ชื่อสูตรคำนวณ
-# ${formulaDetail01}    สาขา
-# ${formulaDetail01}    วันทำงาน
-# ${formulaDetail01}    จำนวนชั่วโมงเข้า-ออกงาน
-# ${formulaDetail01}    เวลาเข้างาน
-# ${formulaDetail01}    เวลาออกงาน
-# ${formulaDetail01}    จำนวนวันลา
-# ${formulaDetail01}    รอบนับ
-# ${formulaDetail01}    จำนวนเงินหัก (ต่อครั้ง)
-# ${formulaDetail01}    จำนวนวันขาด
-# ${formulaDetail01}    จำนวนวันสาย-ออกก่อน
-# ${formulaDetail01}    อนุญาตสาย (นาที)
-# ${formulaDetail01}    อนุญาตออกก่อน (นาที)
-# ${formulaDetail01}
-# ${formulaDetail01}
-# ${formulaDetail01}
-# ${formulaDetail01}
-# ${formulaDetail01}
-# ${formulaDetail01}
-# ${formulaDetail01}
+
 
 # salary calculator
 ${salaryCal01}    คำนวณเงินเดือน
@@ -366,7 +344,7 @@ ${salaryDetail09}    ประกันสังคม
 ${salaryDetail10}    เบิกล่วงหน้า
 ${salaryDetail11}    ยอดสุทธิ
 ${salaryDetail12}    หมายเหตุ
-${salaryDetail13}    รายละเอียด
+${salaryDetail13}    สลีปเงินเดือน
 ${salaryDetail14}    จำนวนพนักงาน (คน)
 ${salaryDetail15}    รวมเงินเดือน (บาท)
 ${salaryDetail16}    รวมค่าล่วงเวลา(บาท)
@@ -410,7 +388,7 @@ ${problem08}    ประเภทของปัญหา
 ${problem09}    หมวดหมู่ย่อยของปัญหา
 ${problem10}    ประเภท
 ${problem11}    สถานะ
-${problem12}    รายละเอียด
+${problem12}    สลีปเงินเดือน
 
 # get problem employee
 ${getproblem01}    รายละเอียดการแจ้งปัญหาของพนักงาน
@@ -419,3 +397,15 @@ ${getproblem03}    ประเภทของปัญหา
 ${getproblem04}    ประเภทย่อยของปัญหา
 ${getproblem05}    รายละเอียดปัญหา
 ${getproblem06}    รูปภาพหลักฐานหน้าจอที่พบปัญหา
+
+# profile setting role HRLead
+
+${profileSettingHRLead01}    ชื่อผู้ใช้
+${profileSettingHRLead02}    dudeeindeedlh.pt
+${profileSettingHRLead03}    สิทธิ์การเข้าถึง
+${profileSettingHRLead04}    HR LEAD
+${profileSettingHRLead05}    อีเมล
+${profileSettingHRLead06}    010101@gmail.chrome
+${profileSettingHRLead07}    เบอร์โทรศัพท์
+${profileSettingHRLead08}    0888888888
+${profileSettingHRLead09}    ที่อยู่

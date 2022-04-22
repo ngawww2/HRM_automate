@@ -1,81 +1,89 @@
 *** Settings ***
 Library    Selenium2Library
-Resource    ../keyword/keyword.robot
-Resource    ../keyword/keyword2.robot
 Resource    ../keyword/keyword3.robot
+Resource    ../keyword/keyword2.robot
+Resource    ../keyword/keyword.robot
 Resource    ../Variables/Variables.robot
 Test Teardown     Close All Browsers
 Suite Teardown     Close All Browsers
 
-
 *** Test Cases ***
 
-case88
+validate hr profile
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR
-    validate other page
+    sleep     2
+    validate hr profile
     sleep     2
     [Teardown]    Close All Browsers
 
-case89
+edit hr profile success
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR
-    validate problem employee page
+    sleep     2
+    validate hr profile
+    edit hr profile
     sleep     2
     [Teardown]    Close All Browsers
 
-case90
+edit hr profile fail
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR
-    validate problem employee page
-    get problem
+    sleep     2
+    validate hr profile
+    edit hr profile fail
     sleep     2
     [Teardown]    Close All Browsers
 
-case91
+cancel edit hr profile
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR
-    validate problem employee page
-    give problem
+    sleep     2
+    validate hr profile
+    cancel edit hr profile
     sleep     2
     [Teardown]    Close All Browsers
 
-case92
+change Password success
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR
-    validate problem employee page
-    respond problem
+    sleep     2
+    validate hr profile
+    change Password success
     sleep     2
     [Teardown]    Close All Browsers
 
-close popup others page
+change Password fail case old Password wrong
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR
-    validate other page
-    close popup others page
+    sleep     2
+    validate hr profile
+    change Password fail case old Password wrong
     sleep     2
     [Teardown]    Close All Browsers
 
-back to problem employee page from respond problem
+change Password fail case no data
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR
-    validate problem employee page
-    back to problem employee page from respond problem
+    sleep     2
+    validate hr profile
+    change Password fail case no data
     sleep     2
     [Teardown]    Close All Browsers
 
-back to problem employee detail
+cancel change Password
     Open Browser    ${host}    browser=chrome
     Maximize Browser Window
     login HR
-    validate problem employee page
-    back to problem employee detail
+    sleep     2
+    validate hr profile
+    cancel change Password
     sleep     2
     [Teardown]    Close All Browsers

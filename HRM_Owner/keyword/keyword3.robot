@@ -266,7 +266,7 @@ add Rule
     sleep  2
     Input Text	//*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[2]/div[1]/div/div[2]/input    ทดสอบการสร้างสูตร
     Select From List By Label    //*[@id="__layout"]/div/div[2]/div[2]/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/select    ทดสอบ
-    'Select Checkbox 	 locator=//*[@id="0"]'
+    Select Checkbox 	 locator=//*[@id="0"]'
     Select Checkbox 	 locator=//*[@id="1"]
     Select Checkbox 	 locator=//*[@id="2"]
     Select Checkbox 	 locator=//*[@id="3"]
